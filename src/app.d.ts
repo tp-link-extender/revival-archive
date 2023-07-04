@@ -7,6 +7,7 @@ declare global {
 		// interface PageData {}
 		// interface Platform {}
 	}
+	declare const Navbar: typeof import("./components/Navbar.svelte").default
 }
 
 export {}
