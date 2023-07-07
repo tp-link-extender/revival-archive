@@ -1,12 +1,33 @@
+@font-face
+	font-family: "Inter"
+	src: url("/Inter.woff2") format("woff2"), url("/Inter.ttf") format("ttf")
+
+@font-face
+	font-family: "Inter"
+	src: url("/InterItalic.woff2") format("woff2"), url("/InterItalic.ttf") format("ttf")
+	font-style: italic
+	
 :root, body
 	padding: 0
 	margin: 0
 	background: #100f0e
 	color: white
-	font-family: "SF UI Display", sans-serif
+	font-family: "Inter", sans-serif
 
 a
 	@apply transition-colors text-orange-500
 	text-decoration: none
 	&:hover
 		@apply text-orange-300
+
+::-webkit-scrollbar
+	position: fixed
+	width: 0.5rem
+	height: 0.5rem
+	&-track, &-corner
+		background: none
+	&-thumb
+		border-radius: 0.2rem
+		background: #282625
+		&:hover
+			background: #464443
