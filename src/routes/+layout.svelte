@@ -1,14 +1,16 @@
 <script lang="ts">
 	import "/src/global.sass"
+	import "uno.css"
 </script>
 
-<Navbar />
+<div class="flex flex-col h-screen">
+	<Navbar />
 
-<p>Sup world</p>
+	<main
+		class="box-border px-5 sm:mx-auto w-full
+		sm:w-140 md:w-180 lg:w-220 xl:w-270 2xl:w-300">
+		<slot />
+	</main>
 
-<slot />
-
-<style lang="sass">
-	p
-		color: red
-</style>
+	<Footer />
+</div>

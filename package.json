@@ -15,6 +15,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"@sveltejs/kit": "^1.21.0",
+		"@unocss/transformer-directives": "^0.53.4",
 		"prettier": "^2.8.8",
 		"prettier-plugin-svelte": "^2.10.1",
 		"sass": "^1.63.6",
@@ -25,5 +26,9 @@
 		"typescript": "^5.1.6",
 		"vite": "^4.3.9"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@unocss/extractor-svelte": "^0.53.4",
+		"unocss": "^0.53.4"
+	}
 }
