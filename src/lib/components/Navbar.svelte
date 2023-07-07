@@ -1,4 +1,4 @@
-<div class="bg-#282726 px-6">
+<div class="bg-#282625 px-6">
 	<span class="inline-block pt-3 pb-3">
 		<a href="/" class="text-light hover:text-#aaa text-xl font-light mb-5">
 			Revival Archive
@@ -8,6 +8,7 @@
 		<nav class="inline-block ps-4">
 			<a class="navlink" href="/">Home</a>
 			<a class="navlink" href="/about">About</a>
+			<a class="navlink" href="/blog">Blog</a>
 		</nav>
 	</span>
 </div>
