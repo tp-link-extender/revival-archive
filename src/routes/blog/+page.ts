@@ -4,13 +4,13 @@ export async function load() {
 	return {
 		posts: Promise.all(
 			Object.entries(allPostFiles).map(async ([path, resolver]) => {
-				const { title, date, html } = await resolver()
+				const { title, date, html } = (await resolver()) as any
 
 				return {
 					title,
 					date,
 					html,
-					path: path.match(/(\w+)\.json/)[1],
+					path: path.match(/(\w+)\.json/)?.[1],
 				}
 			})
 		),

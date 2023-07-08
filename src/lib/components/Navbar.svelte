@@ -8,6 +8,7 @@
 		<nav class="inline-block ps-4">
 			<a class="navlink" href="/">Home</a>
 			<a class="navlink" href="/about">About</a>
+			<a class="navlink" href="/index">Revival Index</a>
 			<a class="navlink" href="/blog">Blog</a>
 		</nav>
 	</span>
