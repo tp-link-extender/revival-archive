@@ -1,28 +1,44 @@
 @font-face
 	font-family: "Inter"
 	src: url("/Inter.woff2") format("woff2"), url("/Inter.ttf") format("ttf")
+	font-display: swap
 
 @font-face
 	font-family: "Inter"
 	src: url("/InterItalic.woff2") format("woff2"), url("/InterItalic.ttf") format("ttf")
 	font-style: italic
+	font-display: swap
 	
 :root, body
 	padding: 0
 	margin: 0
 	background: #100f0e
 	color: white
+	@media (prefers-color-scheme: light)
+		background: #e6e4e3
+		color: black
+
 	font-family: "Inter", sans-serif
 
 a
-	@apply transition-colors text-orange-500
+	@apply transition-colors
 	text-decoration: none
-	&:hover
-		@apply text-orange-300
+	&:not(.txt)
+		@apply text-orange-500
+		&:hover
+			@apply text-orange-300
+			@media (prefers-color-scheme: light)
+				@apply text-orange-700
+	.txt
+		@apply text-white
+		&:hover
+			@apply text-#aaa
 
 hr
 	border: none
 	border-top: 1px solid #464443
+	@media (prefers-color-scheme: light)
+		border-top: 1px solid #a6a4a3
 
 ::-webkit-scrollbar
 	position: fixed
@@ -32,13 +48,22 @@ hr
 		background: none
 	&-thumb
 		border-radius: 0.2rem
+		
 		background: #282625
 		&:hover
 			background: #464443
+
+		@media (prefers-color-scheme: light)
+			background: white
+			&:hover
+				background: #a6a4a3
 
 // Utility classes
 
 .bg-a
 	background: #1f1c1d
+	@media (prefers-color-scheme: light)
+		background: white
+
 .bg-bg
 	background: #100f0e

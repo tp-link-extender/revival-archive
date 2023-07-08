@@ -1,4 +1,4 @@
-<footer class="mt-a p-5 pt-12 text-center text-#8c8b8a">
+<footer class="mt-a p-5 pt-12 text-center text-#8c8b8a @light:text-#4c4b4a">
 	<a href="/" class="pe-1.5">Revival Archive</a>
 	2023-2023
 	<nav class="text-white mt-5 mb-4">
@@ -11,10 +11,19 @@
 <style lang="sass">
 	nav
 		color: #8c8b8a
+		@media (prefers-color-scheme: light)
+			color: #4c4b4a
 		a
+			text-decoration: none
+
 			color: white
 			&:hover
 				color: #aaa
-			text-decoration: none
+
+			@media (prefers-color-scheme: light)
+				color: black
+				&:hover
+					color: #888
+				
 
 </style>

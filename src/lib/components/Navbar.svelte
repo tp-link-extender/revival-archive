@@ -1,6 +1,6 @@
-<div class="bg-#282625 px-6">
+<div class="bg-#282625 @light:bg-white px-6">
 	<span class="inline-block pt-3 pb-3">
-		<a href="/" class="text-light hover:text-#aaa text-xl font-light mb-5">
+		<a href="/" class="txt text-white @light:text-black hover:text-#aaa text-xl font-light mb-5">
 			Revival Archive
 		</a>
 	</span>
@@ -16,8 +16,13 @@
 
 <style lang="sass">
 	.navlink
-		@apply no-underline text-white px-2 me-1 rounded-1 transition
+		@apply no-underline px-2 me-1 rounded-1 transition
 		font-size: 0.9rem
+
+		color: white
+		@media (prefers-color-scheme: light)
+			color: black
+
 		&:hover
 			@apply text-#aaa
 </style>

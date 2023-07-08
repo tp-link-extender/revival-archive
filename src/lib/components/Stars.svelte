@@ -11,7 +11,9 @@
 <style lang="sass">
 	div
 		// Fill each star with a gradient based on the rating
-		background: linear-gradient( to right, #f1c40f var(--rating), #f1c40f var(--rating), #7f7d7c var(--rating), #7f7d7c var(--rating), #7f7d7c)
+		background: linear-gradient(to right, #f1c40f var(--rating), #4f4d4c var(--rating))
+		@media (prefers-color-scheme: light)
+			background: linear-gradient(to right, #f1c40f var(--rating), #bfbdbc var(--rating))
 
 		// APply a mask to hide the gradient outside the star
 		-webkit-mask: url(/star.svg) no-repeat
