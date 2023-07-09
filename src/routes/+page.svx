@@ -1,0 +1,39 @@
+<svelte:head>
+
+<meta name="description" content="Blog posts and reviews about revivals" />
+<title>Revival Archive</title>
+</svelte:head>
+
+# Revival Archive
+
+### a [Mercury](https://banland.xyz) project
+
+Welcome to the Revival Archive, a website dedicated to keeping track of active/defunct old brickbuilding private servers.
+
+Check out our [blog posts](/blog), [reviews](/reviews) and most importantly, the [revival index](/index).
+
+---
+
+## What is a "revival"?
+
+A "revival" or a private server aims to recreate or bring back the experience of a popular MMOG up to 15 years ago.  
+These use specific clients, depending on what year they would like to focus on (e.g. 2014). Almost all revivals have a website where the user can socialize with other members of the community, etc. Typically, Discord is favoured in terms of communication but some revivals can have an active forum.
+
+## How can I join a revival?
+
+You can easily find a revival perfect for you on the Revival Archive!
+
+## I have my own revival, how can I put it on the Revival Archive?
+
+You can go ahead and join our [Discord](https://discord.gg/zfC3VH2WBa) server - there you can request for your/somebody else's revival to be added to the archive!
+
+## How can I create my own revival?
+
+There are many resources available online. Just kidding.
+
+<style lang="sass">
+    h1
+        margin-bottom: 0
+    h3 
+        margin-top: 0
+</style>

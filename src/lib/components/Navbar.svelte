@@ -23,7 +23,7 @@
 	nav a
 		@apply no-underline me-5 rounded-1 transition
 
-		margin: auto 1rem auto 0
+		margin: 5px 1rem auto 0
 
 		font-size: 1.3rem
 		@media screen and (max-width: 1023px)
