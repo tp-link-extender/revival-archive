@@ -6,7 +6,7 @@ export async function load({ params }) {
 
 	try {
 		;({ title, date, html } = await import(
-			`../../../../pagesjson/blog/${params.page}.json`
+			`../../../../pagesjson/blog/${params.post}.json`
 		))
 	} catch (e) {
 		throw error(404, "Post not found")
@@ -18,10 +18,5 @@ export async function load({ params }) {
 	const index = posts.findIndex(post => post.title == title)
 	posts.splice(index, 1)
 
-	return {
-		title,
-		date,
-		html,
-		posts,
-	}
+	return { title, date, html, posts }
 }

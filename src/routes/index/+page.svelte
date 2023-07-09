@@ -15,58 +15,7 @@
 		2020: "bg-slate-600",
 	}
 
-	const revivals = [
-		{
-			name: "Mercury",
-			years: [2013],
-			rating: 5,
-		},
-		{
-			name: "Goodblox",
-			years: [2009],
-			rating: 4,
-		},
-		{
-			name: "Finobe",
-			years: [2012, 2016],
-			rating: 4.5,
-		},
-		{
-			name: "Meteorite",
-			years: [2016, 2020],
-			rating: 2.65,
-		},
-		{
-			name: "Tadah",
-			years: [2010, 2012, 2014, 2016],
-			rating: 3.5,
-		},
-		{
-			name: "Krypton",
-			years: [2011],
-			rating: 4.65,
-		},
-		{
-			name: "Hamblox",
-			years: [2015],
-			rating: 4.65,
-		},
-		{
-			name: "Rawblox",
-			years: [2017],
-			rating: 1,
-		},
-		{
-			name: "idk18",
-			years: [2018],
-			rating: 1.65,
-		},
-		{
-			name: "Kapish",
-			years: [2014, 2016],
-			rating: 2.35,
-		},
-	]
+	export let data
 </script>
 
 <svelte:head>
@@ -79,15 +28,15 @@
 <h1>Revival Index</h1>
 
 <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-	{#each revivals as revival}
+	{#each data.revivals as revival}
 		<a
-			href="/index"
+			href="/revival/{revival.path}"
 			class="txt bg-#1f1c1d @light:bg-white rounded-2 card durition-500
 			@light:text-black box-border flex flex-col p-5 text-white
 			transition hover:shadow-xl">
 			<h2 class="m-0 mb-1">{revival.name}</h2>
 			<div class="flex flex-wrap text-white">
-				{#each revival.years as year}
+				{#each revival.clients as year}
 					<span
 						class="{years[year]}
 						my-1 me-2 rounded-full px-2 py-0.5 text-sm">
@@ -95,8 +44,8 @@
 					</span>
 				{/each}
 			</div>
-			<div class="mb-36 mt-5">
-				This revival is one of the revivals ever! Play today!
+			<div class="mb-30">
+				{@html revival.overview}
 			</div>
 
 			<div class="mt-a ms-a">
