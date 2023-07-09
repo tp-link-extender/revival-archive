@@ -3,7 +3,12 @@
 	"name": "Meteorite",
 	"date": "2023-07-09 01:58 PM",
 	"clients": [2016, 2020],
-	"rating": 2.7
+	"rating": {
+		"website": 2.7,
+		"community": 2.7,
+		"clients": 2.7,
+		"overall": 2.7
+	}
 }
 ```
 

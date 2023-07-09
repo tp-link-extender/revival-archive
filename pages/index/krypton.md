@@ -3,7 +3,12 @@
 	"name": "Krypton",
 	"date": "2023-07-09 01:58 PM",
 	"clients": [2011],
-	"rating": 4.7
+	"rating": {
+		"website": 4.7,
+		"community": 4.7,
+		"clients": 4.7,
+		"overall": 4.7
+	}
 }
 ```
 

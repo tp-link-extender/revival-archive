@@ -3,7 +3,12 @@
 	"name": "Tadah",
 	"date": "2023-07-09 01:58 PM",
 	"clients": [2010, 2012, 2014, 2016],
-	"rating": 3.5
+	"rating": {
+		"website": 3.5,
+		"community": 3.5,
+		"clients": 3.5,
+		"overall": 3.5
+	}
 }
 ```
 

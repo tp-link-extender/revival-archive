@@ -5,7 +5,13 @@ export async function load({ params }) {
 	let name: string,
 		date: Date,
 		clients: number[],
-		rating: number,
+		rating: {
+			website: number
+			community: number
+			development: number
+			clients: number
+			overall: number
+		},
 		html: string
 
 	try {

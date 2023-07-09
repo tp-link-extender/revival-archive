@@ -11,6 +11,8 @@
 		})
 
 	export let data
+
+	const ratingCategories: { [k: string]: number } = data.rating
 </script>
 
 <svelte:head>
@@ -32,14 +34,25 @@
 
 				<hr class="mb-8 mt-3" />
 
-				<div class="text-justify mb-10">
-					{@html data.html}
-				</div>
+				<article>
+					<div class="mb-10 text-justify">
+						{@html data.html}
+					</div>
 
-				<div class="flex">
-					<span class="me-2">Rating:</span>
-					<Stars rating={data.rating} />
-				</div>
+					<h1>Rating</h1>
+
+					<table>
+						{#each Object.keys(ratingCategories) as category}
+							<tr>
+								<td class="pe-6">
+									{category.charAt(0).toUpperCase() +
+										category.slice(1)}
+								</td>
+								<Stars rating={ratingCategories[category]} />
+							</tr>
+						{/each}
+					</table>
+				</article>
 			</div>
 		</div>
 	</article>

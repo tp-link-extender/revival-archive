@@ -37,7 +37,7 @@ allMdFiles.forEach(file => {
 
 	// Get json data from the top of the file
 	const [json, content] = md
-		.match(/^```json[\s\S]*({[\s\S]+})[\s\S]*```\n*([\s\S]+)$/)
+		.match(/^```json[\s\S]*?({[\s\S]+})[\s\S]*```\n*([\s\S]+)$/)
 		.slice(1, 3)
 
 	let obj

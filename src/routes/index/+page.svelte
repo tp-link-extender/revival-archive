@@ -48,7 +48,8 @@
 				{@html revival.overview}
 			</div>
 
-			<div class="mt-a ms-a">
+			<div class="mt-a ms-a flex">
+				<span class="me-2">Rating:</span>
 				<Stars rating={revival.rating} />
 			</div>
 		</a>

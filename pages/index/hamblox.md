@@ -3,7 +3,12 @@
 	"name": "Hamblox",
 	"date": "2023-07-09 01:58 PM",
 	"clients": [2015],
-	"rating": 3.7
+	"rating": {
+		"website": 3.7,
+		"community": 3.7,
+		"clients": 3.7,
+		"overall": 3.7
+	}
 }
 ```
 

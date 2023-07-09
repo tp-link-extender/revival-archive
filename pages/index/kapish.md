@@ -1,13 +1,18 @@
 ```json
 {
-	"name": "kapish",
+	"name": "Kapish",
 	"date": "2023-07-09 01:58 PM",
 	"clients": [2014, 2016],
-	"rating": 2.3
+	"rating": {
+		"website": 2.3,
+		"community": 2.3,
+		"clients": 2.3,
+		"overall": 2.3
+	}
 }
 ```
 
-kapish is a revival
+Kapish is a revival
 
 ---
 

@@ -3,7 +3,12 @@
 	"name": "idk18",
 	"date": "2023-07-09 01:58 PM",
 	"clients": [2018],
-	"rating": 1.7
+	"rating": {
+		"website": 1.7,
+		"community": 1.7,
+		"clients": 1.7,
+		"overall": 1.7
+	}
 }
 ```
 

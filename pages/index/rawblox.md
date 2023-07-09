@@ -3,7 +3,12 @@
 	"name": "Rawblox",
 	"date": "2023-07-09 01:58 PM",
 	"clients": [2017],
-	"rating": 1
+	"rating": {
+		"website": 1,
+		"community": 1,
+		"clients": 1,
+		"overall": 1
+	}
 }
 ```
 

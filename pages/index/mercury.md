@@ -3,7 +3,12 @@
 	"name": "Mercury",
 	"date": "2023-07-09 01:58 PM",
 	"clients": [2013],
-	"rating": 5
+	"rating": {
+		"website": 5,
+		"community": 5,
+		"clients": 5,
+		"overall": 5
+	}
 }
 ```
 

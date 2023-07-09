@@ -11,7 +11,7 @@ export async function load() {
 					name,
 					date,
 					clients,
-					rating,
+					rating: rating.overall,
 					overview,
 					path: path.match(/(\w+)\.json/)?.[1],
 				}
