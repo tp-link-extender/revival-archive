@@ -3,14 +3,22 @@
 	import "uno.css"
 </script>
 
-<div class="flex flex-col h-screen">
+<div class="flex flex-col lg:flex-row">
 	<Navbar />
 
-	<main
-		class="box-border px-5 pt-12 sm:mx-a w-full
-		sm:w-140 md:w-180 lg:w-220 xl:w-270 2xl:w-300">
-		<slot />
-	</main>
+	<div class="flex flex-col w-full h-screen oveflow-scroll">
+		<main
+			class="box-border ps-5 pe-2.5 pt-18 sm:pt-24 lg:pt-12 sm:mx-a
+			sm:w-155 md:w-190 lg:w-170 xl:w-230 2xl:w-280">
+			<slot />
+		</main>
 
-	<Footer />
+		<Footer />
+	</div>
 </div>
+
+<style lang="sass">
+	@media screen and (min-width: 1024px)
+		div div
+			overflow-y: scroll
+</style>

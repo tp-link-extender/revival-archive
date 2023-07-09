@@ -29,10 +29,16 @@ a
 			@apply text-orange-300
 			@media (prefers-color-scheme: light)
 				@apply text-orange-700
+		&:active
+			@apply text-orange-600
+			@media (prefers-color-scheme: light)
+				@apply text-orange-400
 	.txt
 		@apply text-white
 		&:hover
 			@apply text-#aaa
+		&:active
+			@apply text-#888
 
 hr
 	border: none
