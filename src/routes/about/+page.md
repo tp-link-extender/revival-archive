@@ -24,7 +24,7 @@ We have a blog post where we go over recent events in the community (such as pop
 Revivals can also be featured in the *Revival Of The Month*, a special place where one revival is, in our opinion - the best revival for users to join at the moment.
 There can't be more than one *Revival Of The Month* obviously, so we also have a featured section where we recommend other good revivals. Additionally, if you own a revival, you can request to be on the featured section!
 
-We do not provide any revival clients.  
+We do not provide any revival clients for security reasons. 
 
 ---
 

@@ -27,9 +27,6 @@ You can easily find a revival perfect for you on the Revival Archive!
 
 You can go ahead and join our [Discord](https://discord.gg/zfC3VH2WBa) server - there you can request for your/somebody else's revival to be added to the archive!
 
-## How can I create my own revival?
-
-There are many resources available online. Just kidding.
 
 <style lang="sass">
     h1
