@@ -1,5 +1,9 @@
-First blog post
-2023-06-07
+```json
+{
+	"title": "First blog post",
+	"date": "2023-07-06 7:29 PM"
+}
+```
 
 I'm baby portland cred tote bag ethical glossier etsy fixie edison bulb retro irony. Helvetica beard humblebrag before they sold out photo booth yr cloud bread iceland ennui yes plz cold-pressed solarpunk tacos marxism. Yr occupy squid pug helvetica crucifix enamel pin subway tile bruh jean shorts fanny pack. Meditation gluten-free butcher PBR&B twee. Hammock selfies asymmetrical fixie before they sold out.
 

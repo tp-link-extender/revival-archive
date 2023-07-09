@@ -23,26 +23,23 @@ function walk(dir) {
 
 const allMdFiles = walk("./pages")
 
-fs.rmSync("./pagesjson", { recursive: true })
+if (fs.existsSync("./pagesjson")) fs.rmSync("./pagesjson", { recursive: true })
 
 allMdFiles.forEach(file => {
 	let md = fs.readFileSync(file.name, "utf8")
 
-	const lines = md.split("\n")
+	// Get json data from the top of the file
+	const [json, content] = md
+		.match(/^```json[\s\S]*({[\s\S]+})[\s\S]*```\n*([\s\S]+)$/)
+		.slice(1, 3)
 
-	// Remove the first line of the file
-	const title = lines.shift()
-	const date = new Date(lines.shift())
-	lines.shift() // Remove the empty line
-
-	md = lines.join("\n")
-
-	const html = marked.parse(md, {
-		mangle: false,
-		headerIds: false,
-	})
-
-	const obj = { title, date, html }
+	const obj = {
+		...JSON.parse(json),
+		html: marked.parse(content, {
+			mangle: false,
+			headerIds: false,
+		}),
+	}
 
 	fs.mkdirSync(
 		file.name
