@@ -1,6 +1,6 @@
 <script lang="ts">
 	const years: { [k: number]: string } = {
-		2008: "bg-pink-700",
+		2008: "bg-fuchsia-500 text-black",
 		2009: "bg-rose-400 text-black",
 		2010: "bg-red-600",
 		2011: "bg-orange-500 text-black",
@@ -18,7 +18,7 @@
 	const revivals = [
 		{
 			name: "Mercury",
-			years: [2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
+			years: [2013],
 			rating: 5,
 		},
 		{
@@ -70,6 +70,9 @@
 </script>
 
 <svelte:head>
+	<meta
+		name="description"
+		content="An index of many of the currently playable revivals." />
 	<title>Revival Index • Revival Archive</title>
 </svelte:head>
 
@@ -92,8 +95,8 @@
 					</span>
 				{/each}
 			</div>
-			<div class="my-20 text-center">
-				<code>revival logo goes here</code>
+			<div class="mt-5 mb-36">
+				This revival is one of the revivals ever! Play today!
 			</div>
 
 			<div class="mt-a ms-a">

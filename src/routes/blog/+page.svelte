@@ -6,7 +6,7 @@
 	<title>Blog • Revival Archive</title>
 </svelte:head>
 
-<h1>Posts</h1>
+<h1>Blog Posts</h1>
 
 {#each data.posts as post}
 	<a href="/blog/{post.path}" class="txt text-white @light:text-dark
