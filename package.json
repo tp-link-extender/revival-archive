@@ -1,7 +1,7 @@
 {
 	"name": "revival-archive",
 	"version": "0.0.1",
-	"private": true,
+	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "node pages/pages.js && vite build",
@@ -34,5 +34,5 @@
 		"unocss": "^0.53.5",
 		"vite": "^4.4.2"
 	},
-	"type": "module"
+	"packageManager": "pnpm@8.6.6"
 }
