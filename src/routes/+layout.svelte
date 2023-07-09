@@ -6,10 +6,10 @@
 <div class="flex flex-col lg:flex-row">
 	<Navbar />
 
-	<div class="flex flex-col w-full h-screen oveflow-scroll">
+	<div class="oveflow-scroll flex h-screen w-full flex-col">
 		<main
-			class="box-border ps-5 pe-2.5 pt-18 sm:pt-24 lg:pt-12 sm:mx-a
-			sm:w-155 md:w-190 lg:w-170 xl:w-230 2xl:w-280">
+			class="pt-18 sm:mx-a sm:w-155 md:w-190 lg:w-170 xl:w-230 2xl:w-280
+			box-border pe-2.5 ps-5 sm:pt-24 lg:pt-12">
 			<slot />
 		</main>
 

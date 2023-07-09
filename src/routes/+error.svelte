@@ -7,9 +7,9 @@
 	<title>{$page.error?.message} • Revival Archive</title>
 </svelte:head>
 
-<div class="flex flex-col justify-center items-center">
-	<div class="bg-a p-8 px-22 rounded-4 text-center mt-30vh">
-		<h1 class="m-0 mb-5 text-2.2rem">Error {$page.status}</h1>
+<div class="flex flex-col items-center justify-center">
+	<div class="bg-a px-22 rounded-4 mt-30vh p-8 text-center">
+		<h1 class="text-2.2rem m-0 mb-5">Error {$page.status}</h1>
 		{$page.error?.message}
 	</div>
 </div>

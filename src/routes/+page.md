@@ -1,4 +1,5 @@
 <svelte:head>
+
 <meta name="description" content="Blog posts and reviews about revivals" />
 <title>Revival Archive</title>
 </svelte:head>

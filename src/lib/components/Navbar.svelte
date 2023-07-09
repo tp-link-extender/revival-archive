@@ -1,15 +1,17 @@
-<div class="bg-#1f1d1c @light:bg-white w-full lg:w-90 lg:h-a
-	ps-6 pb-3 lg:pt-42 fixed lg:static flex lg:flex-col flex-wrap">
-	<span class="mt-3 me-12 lg:me-0 hidden sm:inline-block">
+<div
+	class="bg-#1f1d1c @light:bg-white lg:w-90 lg:h-a lg:pt-42
+	fixed flex w-full flex-wrap pb-3 ps-6 lg:static lg:flex-col">
+	<span class="me-12 mt-3 hidden sm:inline-block lg:me-0">
 		<a
 			href="/"
-			class="txt text-white @light:text-black
-			text-2xl lg:text-2.2rem font-600">
+			class="txt @light:text-black lg:text-2.2rem
+			font-600 text-2xl text-white">
 			Revival Archive
 		</a>
 	</span>
-	<nav class="flex lg:flex-col flex-wrap
-	box-border justify-self-center mt-3">
+	<nav
+		class="mt-3 box-border flex
+	flex-wrap justify-self-center lg:flex-col">
 		<a href="/">Home</a>
 		<a href="/about">About</a>
 		<a href="/index">Revival Index</a>

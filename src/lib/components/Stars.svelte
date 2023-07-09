@@ -4,7 +4,7 @@
 
 {#each { length: 5 } as _, i}
 	<div
-		class="w-5 h-5 me-1.5 inline-block"
+		class="me-1.5 inline-block h-5 w-5"
 		style="--rating: {Math.min(1, Math.min(5, rating - i)) * 100}%" />
 {/each}
 

@@ -78,24 +78,24 @@
 
 <h1>Revival Index</h1>
 
-<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+<div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
 	{#each revivals as revival}
 		<a
 			href="/index"
-			class="txt bg-#1f1c1d @light:bg-white p-5 rounded-2 flex flex-col
-			card transition durition-500 hover:shadow-xl box-border
-			text-white @light:text-black">
+			class="txt bg-#1f1c1d @light:bg-white rounded-2 card durition-500
+			@light:text-black box-border flex flex-col p-5 text-white
+			transition hover:shadow-xl">
 			<h2 class="m-0 mb-1">{revival.name}</h2>
-			<div class="text-white flex flex-wrap">
+			<div class="flex flex-wrap text-white">
 				{#each revival.years as year}
 					<span
 						class="{years[year]}
-						rounded-full px-2 py-0.5 my-1 text-sm me-2">
+						my-1 me-2 rounded-full px-2 py-0.5 text-sm">
 						{year}
 					</span>
 				{/each}
 			</div>
-			<div class="mt-5 mb-36">
+			<div class="mb-36 mt-5">
 				This revival is one of the revivals ever! Play today!
 			</div>
 
