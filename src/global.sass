@@ -48,21 +48,31 @@ hr
 
 ::-webkit-scrollbar
 	position: fixed
-	width: 0.5rem
+	width: 1rem
 	height: 0.5rem
 	&-track, &-corner
-		background: none
-	&-thumb
-		border-radius: 0.2rem
-		
 		background: #282625
-		&:hover
-			background: #464443
-
 		@media (prefers-color-scheme: light)
 			background: white
+
+	&-thumb
+		background: #181615
+		border: 0.2rem solid #282625
+		border-radius: 1rem
+		width: 0.5rem
+		
+		&:hover
+			background: #464443
+		&:active
+			background: #3f3d3c
+
+		@media (prefers-color-scheme: light)
+			background: #d6d4d3
+			border: 0.2rem solid white
 			&:hover
 				background: #a6a4a3
+			&:active
+				background: #bfbdbc
 
 // Utility classes
 

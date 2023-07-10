@@ -1,6 +1,6 @@
 <div
 	class="bg-#1f1d1c @light:bg-white lg:w-90 lg:h-a lg:pt-42
-	fixed flex w-full flex-wrap pb-3 ps-6 lg:static lg:flex-col">
+	z-1 fixed flex w-full flex-wrap pb-3 ps-6 lg:static lg:flex-col">
 	<span class="me-12 mt-3 hidden sm:inline-block lg:me-0">
 		<a
 			href="/"
@@ -14,7 +14,8 @@
 	flex-wrap justify-self-center lg:flex-col">
 		<a href="/">Home</a>
 		<a href="/about">About</a>
-		<a href="/index">Revival Index</a>
+		<a href="/revivals">Revival Index</a>
+		<a href="/revivals">Reviews</a>
 		<a href="/blog">Blog</a>
 	</nav>
 </div>
@@ -33,7 +34,6 @@
 		@media (prefers-color-scheme: light)
 			color: black
 
-		
 		@media screen and (min-width: 1024px)
 			&::before
 				color: #aaa

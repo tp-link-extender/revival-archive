@@ -1,12 +1,5 @@
 <script lang="ts">
-	const when = (date: Date) =>
-		new Date(date).toLocaleDateString("en-GB", {
-			year: "numeric",
-			month: "long",
-			day: "numeric",
-			hour: "numeric",
-			minute: "numeric",
-		})
+	import when from "$lib/when"
 
 	export let data
 </script>
@@ -31,7 +24,7 @@
 				<hr class="mb-8 mt-3" />
 
 				<div class="text-justify">
-					{@html data.html}
+					<svelte:component this={data.content}/>
 				</div>
 			</div>
 		</div>
@@ -41,14 +34,14 @@
 			<h2>Other posts</h2>
 			{#each data.posts as post}
 				<a
-					href="/blog/{post.path}"
+					href="/post/{post.path}"
 					class="txt bg-a @light:text-dark hover:text-#ccc
 					@light:hover:text-#555 rounded-3 durition-500 box-border
 					block text-white transition hover:shadow-xl">
 					<article class="mb-4 px-6 py-3">
 						<h3 class="my-2">{post.title}</h3>
 						<small class="pb-5">
-							Published {when(post.date)}
+							{when(post.date)}
 						</small>
 					</article>
 				</a>

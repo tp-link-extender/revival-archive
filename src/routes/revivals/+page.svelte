@@ -28,7 +28,7 @@
 <h1>Revival Index</h1>
 
 <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-	{#each data.revivals as revival}
+	{#each data.revivals.sort((a, b) => b.rating.overall - a.rating.overall) as revival}
 		<a
 			href="/revival/{revival.path}"
 			class="txt bg-#1f1c1d @light:bg-white rounded-2 card durition-500
@@ -50,7 +50,7 @@
 
 			<div class="mt-a ms-a flex">
 				<span class="me-2">Rating:</span>
-				<Stars rating={revival.rating} />
+				<Stars rating={revival.rating.overall} />
 			</div>
 		</a>
 	{/each}

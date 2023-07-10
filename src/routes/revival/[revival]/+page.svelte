@@ -1,14 +1,6 @@
 <script lang="ts">
+	import when from "$lib/when"
 	import Stars from "$lib/components/Stars.svelte"
-
-	const when = (date: Date) =>
-		new Date(date).toLocaleDateString("en-GB", {
-			year: "numeric",
-			month: "long",
-			day: "numeric",
-			hour: "numeric",
-			minute: "numeric",
-		})
 
 	export let data
 
@@ -23,12 +15,12 @@
 <div class="xl:max-w-300 flex flex-col xl:flex-row">
 	<article class="w-150 pt-8">
 		<div class="-ms-4">
-			<a href="/index" class="hover:text-#888">← Back to Index</a>
+			<a href="/revivals" class="hover:text-#888">← Back to Index</a>
 			<div class="ms-4">
 				<span class="mt-2 flex">
 					<h1 class="text-2rem m-0">{data.name}</h1>
 					<span class="mt-a ms-a mb-0.5">
-						Published {when(data.date)}
+						{when(data.date)}
 					</span>
 				</span>
 
@@ -36,7 +28,7 @@
 
 				<article>
 					<div class="mb-10 text-justify">
-						{@html data.html}
+						<svelte:component this={data.content} />
 					</div>
 
 					<h1>Rating</h1>
@@ -68,7 +60,7 @@
 					<article class="mb-4 px-6 py-3">
 						<h3 class="my-2">{revival.name}</h3>
 						<small class="pb-5">
-							Published {when(revival.date)}
+							{when(revival.date)}
 						</small>
 					</article>
 				</a>
