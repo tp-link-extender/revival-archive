@@ -1,19 +1,16 @@
-```json
-{
-	"name": "Meteorite",
-	"date": "2023-07-09 01:58 PM",
-	"clients": [2016, 2020],
-	"rating": {
-		"website": 2.7,
-		"community": 2.7,
-		"clients": 2.7,
-		"overall": 2.7
-	}
-}
-```
-
-Meteorite is a revival
-
+---
+name: Meteorite
+date: 2023-07-09 01:58 PM
+clients:
+    - 2016
+    - 2020
+rating:
+    website: 2.7
+    community: 2.7
+    clients: 2.7
+    overall: 2.7
+overview: |
+    Meteorite is a revival
 ---
 
 Banjo bruh gatekeep, scenester mukbang crucifix XOXO everyday carry. Ullamco JOMO vinyl eu prism et. Roof party shoreditch green juice fugiat post-ironic chillwave flannel fixie bodega boys vegan prism snackwave etsy. Tote bag bodega boys church-key, voluptate palo santo vice wolf food truck leggings hot chicken subway tile.

@@ -1,19 +1,15 @@
-```json
-{
-	"name": "Mercury",
-	"date": "2023-07-09 01:58 PM",
-	"clients": [2013],
-	"rating": {
-		"website": 5,
-		"community": 5,
-		"clients": 5,
-		"overall": 5
-	}
-}
-```
-
-Mercury is a revival
-
+---
+name: Mercury
+date: 2023-07-09 01:58 PM
+clients:
+    - 2013
+rating:
+    website: 5
+    community: 5
+    clients: 5
+    overall: 5
+overview: |
+    Mercury is a revival
 ---
 
 Tilde lorem tbh, cliche eu forage laborum franzen vice. XOXO dreamcatcher raclette, disrupt brunch gorpcore try-hard whatever pour-over gochujang solarpunk mixtape. Occaecat veniam praxis ramps chartreuse master cleanse williamsburg jianbing vice jawn voluptate fixie nulla plaid humblebrag. Farm-to-table tofu 90's gochujang deep v affogato. Hella yes plz ipsum actually truffaut narwhal viral ut. Fam fixie mustache bushwick.

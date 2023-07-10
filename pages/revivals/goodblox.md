@@ -1,19 +1,15 @@
-```json
-{
-	"name": "Goodblox",
-	"date": "2023-07-09 01:58 PM",
-	"clients": [2009],
-	"rating": {
-		"website": 4.5,
-		"community": 4.5,
-		"clients": 4.5,
-		"overall": 4.5
-	}
-}
-```
-
-Goodblox is a revival
-
+---
+name: Goodblox
+date: 2023-07-09 01:58 PM
+clients:
+    - 2009
+rating:
+    website: 4.5
+    community: 4.5
+    clients: 4.5
+    overall: 4.5
+overview: |
+    Goodblox is a revival
 ---
 
 Minim viral gochujang ipsum et cred pitchfork shaman copper mug lumbersexual. Ipsum +1 fanny pack, twee chartreuse biodiesel fixie vexillologist tbh master cleanse unicorn subway tile officia. Tempor sunt small batch, waistcoat keffiyeh yes plz kogi. Adaptogen woke yes plz JOMO actually. You probably haven't heard of them kickstarter mollit chia whatever vaporware tonx man bun ethical letterpress cardigan. Blog nostrud vaporware aute woke. Before they sold out irure lorem, austin freegan vice ullamco in disrupt grailed franzen quinoa quis bushwick.

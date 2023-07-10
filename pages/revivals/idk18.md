@@ -1,19 +1,15 @@
-```json
-{
-	"name": "idk18",
-	"date": "2023-07-09 01:58 PM",
-	"clients": [2018],
-	"rating": {
-		"website": 1.7,
-		"community": 1.7,
-		"clients": 1.7,
-		"overall": 1.7
-	}
-}
-```
-
-idk18 is a revival
-
+---
+name: idk18
+date: 2023-07-09 01:58 PM
+clients:
+    - 2018
+rating:
+    website: 1.7
+    community: 1.7
+    clients: 1.7
+    overall: 1.7
+overview: |
+    idk18 is a revival
 ---
 
 Taxidermy adaptogen do hot chicken consequat elit blue bottle pinterest portland velit normcore fashion axe anim mumblecore ex. Sus keffiyeh hot chicken affogato slow-carb nulla reprehenderit, occaecat neutral milk hotel chillwave XOXO tacos. Sus eu aliquip, shaman labore pinterest mumblecore narwhal kickstarter. Fit occaecat taiyaki DIY, succulents sint brunch magna tumblr YOLO thundercats.

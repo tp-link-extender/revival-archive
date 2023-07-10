@@ -1,19 +1,15 @@
-```json
-{
-	"name": "Hamblox",
-	"date": "2023-07-09 01:58 PM",
-	"clients": [2015],
-	"rating": {
-		"website": 3.7,
-		"community": 3.7,
-		"clients": 3.7,
-		"overall": 3.7
-	}
-}
-```
-
-Hamblox is a revival
-
+---
+name: Hamblox
+date: 2023-07-09 01:58 PM
+clients:
+    - 2015
+rating:
+    website: 3.7
+    community: 3.7
+    clients: 3.7
+    overall: 3.7
+overview: |
+    Hamblox is a revival
 ---
 
 Big mood dolor +1, post-ironic green juice williamsburg you probably haven't heard of them edison bulb af asymmetrical poke chicharrones iPhone bespoke put a bird on it. Heirloom paleo air plant, raclette woke pariatur selfies chambray. Hashtag sunt you probably haven't heard of them velit meggings. Polaroid activated charcoal lyft messenger bag adipisicing, minim prism squid shabby chic yes plz kinfolk Brooklyn.

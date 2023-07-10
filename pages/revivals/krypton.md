@@ -1,19 +1,15 @@
-```json
-{
-	"name": "Krypton",
-	"date": "2023-07-09 01:58 PM",
-	"clients": [2011],
-	"rating": {
-		"website": 4.7,
-		"community": 4.7,
-		"clients": 4.7,
-		"overall": 4.7
-	}
-}
-```
-
-Krypton is a revival
-
+---
+name: Krypton
+date: 2023-07-09 01:58 PM
+clients:
+    - 2011
+rating:
+    website: 4.7
+    community: 4.7
+    clients: 4.7
+    overall: 4.7
+overview: |
+    Krypton is a revival
 ---
 
 Artisan qui marxism mumblecore craft beer. Do lo-fi consequat raw denim gastropub sed blog, tumblr intelligentsia PBR&B. Deserunt fit ut retro. Gochujang mlkshk 3 wolf moon, lomo nisi excepteur tacos tousled vinyl et portland tilde.

@@ -1,19 +1,16 @@
-```json
-{
-	"name": "Kapish",
-	"date": "2023-07-09 01:58 PM",
-	"clients": [2014, 2016],
-	"rating": {
-		"website": 2.3,
-		"community": 2.3,
-		"clients": 2.3,
-		"overall": 2.3
-	}
-}
-```
-
-Kapish is a revival
-
+---
+name: Kapish
+date: 2023-07-09 01:58 PM
+clients:
+    - 2014
+    - 2016
+rating:
+    website: 2.3
+    community: 2.3
+    clients: 2.3
+    overall: 2.3
+overview: |
+    Kapish is a revival
 ---
 
 Tousled kinfolk coloring book +1 blackbird spyplane celiac vice palo santo mixtape grailed YOLO elit. Portland etsy fixie poutine. Pariatur gluten-free activated charcoal, XOXO godard shaman iceland. Art party single-origin coffee magna humblebrag sustainable celiac swag.

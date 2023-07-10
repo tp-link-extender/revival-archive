@@ -12,7 +12,7 @@ export default defineConfig({
 	],
 	server: {
 		fs: {
-			allow: ["./pagesjson"],
+			allow: ["./pages"],
 		},
 	},
 })

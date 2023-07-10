@@ -1,19 +1,18 @@
-```json
-{
-	"name": "Tadah",
-	"date": "2023-07-09 01:58 PM",
-	"clients": [2010, 2012, 2014, 2016],
-	"rating": {
-		"website": 3.5,
-		"community": 3.5,
-		"clients": 3.5,
-		"overall": 3.5
-	}
-}
-```
-
-Tadah is a revival
-
+---
+name: Tadah
+date: 2023-07-09 01:58 PM
+clients:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+rating:
+    website: 3.5
+    community: 3.5
+    clients: 3.5
+    overall: 3.5
+overview: |
+    Tadah is a revival
 ---
 
 Sed enim shaman roof party taiyaki pabst ipsum palo santo irure normcore polaroid small batch. Dolor ugh shoreditch incididunt laboris salvia iceland cornhole consectetur poutine raw denim fixie sunt activated charcoal. PBR&B pitchfork excepteur, woke eu affogato plaid leggings taiyaki. Kombucha hot chicken palo santo, laborum tempor aliqua cliche id jawn irony shaman. Tumeric et celiac, coloring book put a bird on it sartorial butcher cornhole heirloom.

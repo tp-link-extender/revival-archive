@@ -1,9 +1,7 @@
-```json
-{
-	"title": "Second blog post",
-	"date": "2023-07-09 11:40 AM"
-}
-```
+---
+title: Second blog post
+date: 2023-07-09 11:40 AM
+---
 
 Franzen bodega boys gorpcore disrupt hell of viral wolf man braid food truck VHS yr. Gentrify tumblr meditation, art party try-hard vaporware direct trade echo park helvetica you probably haven't heard of them disrupt fam. Poutine portland gatekeep bespoke. Organic neutra jianbing, occupy distillery 3 wolf moon big mood bitters tumblr actually forage tattooed. DIY messenger bag listicle, sustainable bitters sus portland. Gentrify VHS freegan artisan solarpunk seitan bruh hoodie live-edge drinking vinegar vape iceland palo santo +1.
 

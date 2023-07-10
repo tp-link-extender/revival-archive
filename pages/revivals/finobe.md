@@ -1,19 +1,16 @@
-```json
-{
-	"name": "Finobe",
-	"date": "2023-07-09 01:58 PM",
-	"clients": [2012, 2016],
-	"rating": {
-		"website": 4,
-		"community": 4,
-		"clients": 4,
-		"overall": 4
-	}
-}
-```
-
-Finobe is a revival
-
+---
+name: Finobe
+date: 2023-07-09 01:58 PM
+clients:
+    - 2012
+    - 2016
+rating:
+    website: 4
+    community: 4
+    clients: 4
+    overall: 4
+overview: |
+    Finobe is a revival
 ---
 
 Grailed laborum reprehenderit, id art party ea la croix small batch DIY fingerstache. Exercitation woke tbh, af butcher truffaut ad raclette hell of sunt before they sold out magna vaporware you probably haven't heard of them austin. Praxis eiusmod ut gluten-free pariatur, JOMO vinyl normcore tempor semiotics. Authentic kogi fashion axe yes plz veniam. Ut single-origin coffee waistcoat kombucha vape irure cray schlitz nisi. Cloud bread four dollar toast enamel pin sus. Butcher fam cliche salvia, af before they sold out selvage duis.
