@@ -10,7 +10,7 @@
 </svelte:head>
 
 <div class="xl:max-w-300 flex flex-col xl:flex-row">
-	<article class="max-w-150 pt-8">
+	<article class="max-w-180 pt-8">
 		<div class="-ms-4">
 			<a href="/blog" class="hover:text-#888">← Back to blog</a>
 			<div class="ms-4">
@@ -21,16 +21,16 @@
 					</span>
 				</span>
 
-				<hr class="mb-8 mt-3" />
+				<hr class="mb-4 mt-3" />
 
-				<div class="text-justify">
-					<svelte:component this={data.content}/>
+				<div class="content pt-0.01 text-justify">
+					<svelte:component this={data.content} />
 				</div>
 			</div>
 		</div>
 	</article>
 	{#if data.posts.length > 0}
-		<section class="w-150 xl:max-w-100 xl:ms-12 xl:mt-14">
+		<section class="w-120 xl:max-w-100 xl:ms-12 xl:mt-14">
 			<h2>Other posts</h2>
 			{#each data.posts as post}
 				<a

@@ -4,7 +4,7 @@ export async function load() {
 	return {
 		revivals: Promise.all(
 			Object.keys(allPostFiles).map(async path => {
-				const { metadata } = await allPostFiles[path]() as any
+				const { metadata } = (await allPostFiles[path]()) as any
 
 				return {
 					...(metadata as {

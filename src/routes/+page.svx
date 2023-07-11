@@ -5,12 +5,12 @@
 </svelte:head>
 
 # Revival Archive
-
 ### a [Mercury](https://banland.xyz) project
 
+<div class="content">
 Welcome to the Revival Archive, a website dedicated to keeping track of active/defunct old brickbuilding private servers.
 
-Check out our [blog posts](/blog), [reviews](/revivals) and most importantly, the [revival index](/revivals).
+Check out our [blog posts](/blog), [reviews](/reviews) and most importantly, the [revival index](/revivals).
 
 ---
 
@@ -26,10 +26,11 @@ You can easily find a revival perfect for you on the Revival Archive!
 ## I have my own revival, how can I put it on the Revival Archive?
 
 You can go ahead and join our [Discord](https://discord.gg/zfC3VH2WBa) server - there you can request for your/somebody else's revival to be added to the archive!
+</div>
 
 <style lang="sass">
-    h1
-        margin-bottom: 0
-    h3 
-        margin-top: 0
+	h1
+		margin-bottom: 0
+	h3 
+		margin-top: 0
 </style>

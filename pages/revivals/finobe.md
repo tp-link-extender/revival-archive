@@ -1,6 +1,7 @@
 ---
 name: Finobe
 date: 2023-07-09 01:58 PM
+logo: finobe.png
 clients:
     - 2012
     - 2016

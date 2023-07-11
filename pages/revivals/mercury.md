@@ -1,6 +1,7 @@
 ---
 name: Mercury
 date: 2023-07-09 01:58 PM
+logo: mercury.svg
 clients:
     - 2013
 rating:

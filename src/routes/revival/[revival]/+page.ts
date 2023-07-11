@@ -21,6 +21,7 @@ export async function load({ params }) {
 		...(data.metadata as {
 			name: string
 			date: Date
+			logo?: string
 			clients: number[]
 			rating: {
 				website: number

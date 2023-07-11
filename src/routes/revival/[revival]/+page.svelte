@@ -13,21 +13,27 @@
 </svelte:head>
 
 <div class="xl:max-w-300 flex flex-col xl:flex-row">
-	<article class="w-150 pt-8">
-		<div class="-ms-4">
-			<a href="/revivals" class="hover:text-#888">← Back to Index</a>
-			<div class="ms-4">
-				<span class="mt-2 flex">
+	<article class="w-180 pt-8">
+		<div class="-ms-4 flex flex-col">
+			{#if data.logo}
+				<img
+					src="/logos/{data.logo}"
+					class="logo mx-a h-15 -mb-6"
+					alt="{data.name} Logo" />
+			{/if}
+			<a href="/revivals" class="hover:text-#888 mt-a">← Back to Index</a>
+			<div class="ms-4 mt-4">
+				<span class="flex">
 					<h1 class="text-2rem m-0">{data.name}</h1>
 					<span class="mt-a ms-a mb-0.5">
 						{when(data.date)}
 					</span>
 				</span>
 
-				<hr class="mb-8 mt-3" />
+				<hr class="mb-4 mt-3" />
 
-				<article>
-					<div class="mb-10 text-justify">
+				<div class="content pt-0.01 text-justify">
+					<div class="mb-10">
 						<svelte:component this={data.content} />
 					</div>
 
@@ -44,12 +50,12 @@
 							</tr>
 						{/each}
 					</table>
-				</article>
+				</div>
 			</div>
 		</div>
 	</article>
 	{#if data.revivals.length > 0}
-		<section class="w-150 xl:max-w-100 xl:ms-12 xl:mt-14">
+		<section class="w-120 xl:max-w-100 xl:ms-12 xl:mt-14">
 			<h2>Other revivals</h2>
 			{#each data.revivals as revival}
 				<a
@@ -72,4 +78,9 @@
 <style lang="sass">
 	section a:hover
 		transform: translateY(-0.15rem)
+
+	.logo
+		filter: drop-shadow(0 0 5px #fffa) invert(0)
+		@media (prefers-color-scheme: light)
+			filter: drop-shadow(0 0 5px #000a)
 </style>

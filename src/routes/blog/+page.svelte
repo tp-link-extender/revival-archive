@@ -10,7 +10,7 @@
 
 <h1>Blog Posts</h1>
 
-{#each data.posts as post}
+{#each data.posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()) as post}
 	<a
 		href="/post/{post.path}"
 		class="txt @light:text-dark hover:text-#ccc

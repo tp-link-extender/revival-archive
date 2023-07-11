@@ -36,7 +36,13 @@
 </div>
 
 <style lang="sass">
-	@media screen and (min-width: 1024px)
-		div div
+	div div
+		background-size: 2rem 2rem
+		background-position: 1rem 1rem
+		background-image: linear-gradient(90deg, #191716 1px, transparent 1px), linear-gradient(0deg, #191716 1px, transparent 1px)
+		@media (prefers-color-scheme: light)
+			background-image: linear-gradient(90deg, #f9f7f6 1px, transparent 1px), linear-gradient(0deg, #f9f7f6 1px, transparent 1px)
+
+		@media screen and (min-width: 1024px)
 			overflow-y: scroll
 </style>
