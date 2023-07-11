@@ -8,7 +8,7 @@
 		2013: "bg-lime-500 text-black",
 		2014: "bg-emerald-600 text-black",
 		2015: "bg-cyan-600 text-black",
-		2016: "bg-blue-600 ",
+		2016: "bg-blue-600",
 		2017: "bg-indigo-600",
 		2018: "bg-violet-400 text-black",
 		2019: "bg-purple-600",

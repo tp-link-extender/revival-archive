@@ -1,6 +1,24 @@
 <script lang="ts">
+	import { navigating } from "$app/stores"
+	import nprogress from "nprogress"
+
+	import "/src/nprogress.sass"
 	import "/src/global.sass"
 	import "uno.css"
+
+	// Settings for nprogress, the loading bar shown
+	// at the top of the page when navigating
+	nprogress.configure({ showSpinner: false })
+
+	let timeout: any
+	// 100ms is the minimum time the loading bar will be shown
+	$: if ($navigating && !timeout) timeout = setTimeout(nprogress.start, 100)
+	else {
+		clearTimeout(timeout)
+		timeout = null
+
+		nprogress.done()
+	}
 </script>
 
 <div class="flex flex-col lg:flex-row">

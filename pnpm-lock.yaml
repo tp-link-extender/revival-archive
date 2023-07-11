@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  nprogress:
+    specifier: ^0.2.0
+    version: 0.2.0
+
 devDependencies:
   '@sveltejs/adapter-static':
     specifier: ^2.0.2
@@ -14,6 +19,9 @@ devDependencies:
   '@types/marked':
     specifier: ^5.0.0
     version: 5.0.0
+  '@types/nprogress':
+    specifier: ^0.2.0
+    version: 0.2.0
   '@unocss/extractor-svelte':
     specifier: ^0.53.5
     version: 0.53.5
@@ -458,6 +466,10 @@ packages:
 
   /@types/marked@5.0.0:
     resolution: {integrity: sha512-YcZe50jhltsCq7rc9MNZC/4QB/OnA2Pd6hrOSTOFajtabN+38slqgDDCeE/0F83SjkKBQcsZUj7VLWR0H5cKRA==}
+    dev: true
+
+  /@types/nprogress@0.2.0:
+    resolution: {integrity: sha512-1cYJrqq9GezNFPsWTZpFut/d4CjpZqA0vhqDUPFWYKF1oIyBz5qnoYMzR+0C/T96t3ebLAC1SSnwrVOm5/j74A==}
     dev: true
 
   /@types/pug@2.0.6:
@@ -1200,6 +1212,10 @@ packages:
     dependencies:
       path-key: 3.1.1
     dev: true
+
+  /nprogress@0.2.0:
+    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
+    dev: false
 
   /ofetch@1.1.1:
     resolution: {integrity: sha512-SSMoktrp9SNLi20BWfB/BnnKcL0RDigXThD/mZBeQxkIRv1xrd9183MtLdsqRYLYSqW0eTr5t8w8MqjNhvoOQQ==}
