@@ -15,7 +15,7 @@
 		<a href="/">Home</a>
 		<a href="/about">About</a>
 		<a href="/revivals">Revival Index</a>
-		<a href="/revivals">Reviews</a>
+		<a href="/reviews">Reviews</a>
 		<a href="/blog">Blog</a>
 	</nav>
 </div>
