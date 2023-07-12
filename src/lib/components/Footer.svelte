@@ -8,22 +8,20 @@
 	</nav>
 </footer>
 
-<style lang="sass">
+<style lang="stylus">
 	nav
-		color: #8c8b8a
-		@media (prefers-color-scheme: light)
-			color: #4c4b4a
+		color #8c8b8a
+		+lightTheme()
+			color #4c4b4a
 		a
-			text-decoration: none
+			text-decoration none
 
-			color: white
+			color white
 			&:hover
-				color: #aaa
+				color #aaa
 
-			@media (prefers-color-scheme: light)
-				color: black
+			+lightTheme()
+				color black
 				&:hover
-					color: #888
-				
-
+					color #888
 </style>

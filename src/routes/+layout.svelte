@@ -2,20 +2,20 @@
 	import { navigating } from "$app/stores"
 	import nprogress from "nprogress"
 
-	import "/src/nprogress.sass"
-	import "/src/global.sass"
+	import "/src/nprogress.styl"
+	import "/src/global.styl"
 	import "uno.css"
 
 	// Settings for nprogress, the loading bar shown
 	// at the top of the page when navigating
 	nprogress.configure({ showSpinner: false })
 
-	let timeout: any
+	let timeout: number | undefined
 	// 100ms is the minimum time the loading bar will be shown
 	$: if ($navigating && !timeout) timeout = setTimeout(nprogress.start, 100)
 	else {
 		clearTimeout(timeout)
-		timeout = null
+		timeout = undefined
 
 		nprogress.done()
 	}
@@ -35,14 +35,18 @@
 	</div>
 </div>
 
-<style lang="sass">
+<style lang="stylus">
 	div div
-		background-size: 2rem 2rem
-		background-position: 1rem 1rem
-		background-image: linear-gradient(90deg, #191716 1px, transparent 1px), linear-gradient(0deg, #191716 1px, transparent 1px)
-		@media (prefers-color-scheme: light)
-			background-image: linear-gradient(90deg, #f9f7f6 1px, transparent 1px), linear-gradient(0deg, #f9f7f6 1px, transparent 1px)
+		background-size 2rem 2rem
+		background-position 1rem 1rem
 
-		@media screen and (min-width: 1024px)
-			overflow-y: scroll
+		background-image linear-gradient(90deg, #191716 1px, transparent 1px), 
+			linear-gradient(0deg, #191716 1px, transparent 1px)
+
+		+lightTheme()
+			background-image linear-gradient(90deg, #f9f7f6 1px, transparent 1px),
+				linear-gradient(0deg, #f9f7f6 1px, transparent 1px)
+
+		+lg()
+			overflow-y scroll
 </style>

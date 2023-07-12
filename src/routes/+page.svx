@@ -28,9 +28,9 @@ You can easily find a revival perfect for you on the Revival Archive!
 You can go ahead and join our [Discord](https://discord.gg/zfC3VH2WBa) server - there you can request for your/somebody else's revival to be added to the archive!
 </div>
 
-<style lang="sass">
+<style lang="stylus">
 	h1
-		margin-bottom: 0
+		margin-bottom 0
 	h3 
-		margin-top: 0
+		margin-top 0
 </style>

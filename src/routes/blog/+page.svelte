@@ -25,7 +25,7 @@
 	</a>
 {/each}
 
-<style lang="sass">
+<style lang="stylus">
 	a:hover
-		transform: translateY(-0.15rem)
+		transform translateY(-0.15rem)
 </style>

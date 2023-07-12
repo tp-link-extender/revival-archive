@@ -57,7 +57,7 @@
 	{/if}
 </div>
 
-<style lang="sass">
+<style lang="stylus">
 	section a:hover
-		transform: translateY(-0.15rem)
+		transform translateY(-0.15rem)
 </style>

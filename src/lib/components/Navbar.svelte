@@ -20,34 +20,34 @@
 	</nav>
 </div>
 
-<style lang="sass">
+<style lang="stylus">
 	nav a
 		@apply no-underline me-5 rounded-1 transition
 
-		margin: 5px 1rem auto 0
+		margin 5px 1rem auto 0
 
-		font-size: 1.3rem
-		@media screen and (max-width: 1023px)
-			font-size: 1rem
+		font-size 1.3rem
+		+-lg()
+			font-size 1rem
 
-		color: white
-		@media (prefers-color-scheme: light)
-			color: black
+		color white
+		+lightTheme()
+			color black
 
-		@media screen and (min-width: 1024px)
+		+lg()
 			&::before
-				color: #aaa
-				transition: 0.25s
-				content: "→ "
-				opacity: 0
+				color #aaa
+				transition 0.25s
+				content "→ "
+				opacity 0
 
 	a
 		&:hover
-			color: #aaa
+			color #aaa
 			&::before
-				margin-right: 0.5rem
-				opacity: 1
+				margin-right 0.5rem
+				opacity 1
 
 		&:active
-			color: #7f7f7f
+			color #7f7f7f
 </style>

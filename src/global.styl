@@ -1,0 +1,109 @@
+@import "./variables.styl"
+		
+@font-face
+	font-family "Inter"
+	src url("/Inter.woff2") format("woff2"),
+		url("/Inter.ttf") format("ttf")
+	font-display swap
+
+@font-face
+	font-family "Inter"
+	src url("/InterItalic.woff2") format("woff2"),
+		url("/InterItalic.ttf") format("ttf")
+	font-style italic
+	font-display swap
+	
+:root, body
+	padding 0
+	margin 0
+	background #100f0e
+	color white
+	+lightTheme()
+		background #e6e4e3
+		color black
+
+	font-family "Inter", sans-serif
+
+a
+	@apply transition-colors
+	text-decoration none
+	&:not(.txt)
+		@apply text-orange-500
+		&:hover
+			@apply text-orange-300
+			+lightTheme()
+				@apply text-orange-700
+		&:active
+			@apply text-orange-600
+			+lightTheme()
+				@apply text-orange-400
+	.txt
+		@apply text-white
+		&:hover
+			@apply text-#aaa
+		&:active
+			@apply text-#888
+
+hr
+	border none
+	border-top 1px solid #464443
+	+lightTheme()
+		border-top 1px solid #a6a4a3
+
+::-webkit-scrollbar
+	position fixed
+	width 1rem
+	height 0.5rem
+	&-track, &-corner
+		background #282625
+		+lightTheme()
+			background white
+
+	&-thumb
+		background #181615
+		border 0.2rem solid #282625
+		border-radius 1rem
+		width 0.5rem
+		
+		&:hover
+			background #464443
+		&:active
+			background #3f3d3c
+
+		+lightTheme()
+			background #d6d4d3
+			border 0.2rem solid white
+			&:hover
+				background #a6a4a3
+			&:active
+				background #bfbdbc
+
+// Utility classes
+
+.bg-a
+	background #1f1c1d
+	+lightTheme()
+		background white
+
+.bg-bg
+	background #100f0e
+
+.content
+	@apply bg-a p-4 rounded-lg shadow-lg
+
+	background #1f1c1d
+	+lightTheme()
+		background white
+
+.logo
+	filter drop-shadow(0 0 5px #fffa) invert(0)
+	+lightTheme()
+		filter drop-shadow(0 0 5px #000a)
+
+li ul
+	list-style-type circle
+	margin 0.3rem 0 0.3rem -1rem
+
+main
+	> h1, > h2, > h3, > h4, > h5, > h6
+		margin-left 1rem

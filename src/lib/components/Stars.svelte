@@ -8,13 +8,15 @@
 		style="--rating: {Math.min(1, Math.min(5, rating - i)) * 100}%" />
 {/each}
 
-<style lang="sass">
+<style lang="stylus">
 	div
 		// Fill each star with a gradient based on the rating
-		background: linear-gradient(to right, #f1c40f var(--rating), #4f4d4c var(--rating))
-		@media (prefers-color-scheme: light)
-			background: linear-gradient(to right, #f1c40f var(--rating), #bfbdbc var(--rating))
+		background linear-gradient(to right,
+			#f1c40f var(--rating), #4f4d4c var(--rating))
+		+lightTheme()
+			background linear-gradient(to right,
+				#f1c40f var(--rating), #bfbdbc var(--rating))
 
-		// APply a mask to hide the gradient outside the star
-		-webkit-mask: url(/star.svg) no-repeat
+		// Apply a mask to hide the gradient outside the star
+		-webkit-mask url(/star.svg) no-repeat
 </style>

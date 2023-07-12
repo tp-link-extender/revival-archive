@@ -68,7 +68,7 @@
 	{/each}
 </div>
 
-<style lang="sass">
+<style lang="stylus">
 	.card:hover
-		transform: translateY(-0.3rem)
+		transform translateY(-0.3rem)
 </style>
