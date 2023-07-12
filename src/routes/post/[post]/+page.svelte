@@ -17,7 +17,13 @@
 				<span class="mt-2 flex">
 					<h1 class="text-2rem m-0">{data.title}</h1>
 					<span class="mt-a ms-a mb-0.5">
-						Published {when(data.date)}
+						{when(data.date)}
+						{#if data.updated}
+							<br />
+							<em>
+								{when(data.updated, true)}
+							</em>
+						{/if}
 					</span>
 				</span>
 
@@ -29,6 +35,7 @@
 			</div>
 		</div>
 	</article>
+
 	{#if data.posts.length > 0}
 		<section class="w-120 xl:max-w-100 xl:ms-12 xl:mt-14">
 			<h2>Other posts</h2>

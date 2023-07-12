@@ -1,5 +1,6 @@
 import { error } from "@sveltejs/kit"
 import { load as loadBlog } from "../../blog/+page"
+import type { PostMetadata } from "$lib/types"
 
 export async function load({ params }) {
 	let data: any
@@ -14,14 +15,11 @@ export async function load({ params }) {
 	// remove the current post from the list
 	posts.splice(
 		posts.findIndex(post => post.title == data.metadata.title),
-		1,
+		1
 	)
 
 	return {
-		...(data.metadata as {
-			title: string
-			date: Date
-		}),
+		...(data.metadata as PostMetadata),
 		content: data.default,
 		posts,
 	}

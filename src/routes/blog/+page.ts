@@ -1,3 +1,5 @@
+import type { PostMetadata } from "$lib/types"
+
 export async function load() {
 	const allPostFiles = import.meta.glob("../../../pages/blog/*.md")
 
@@ -7,13 +9,10 @@ export async function load() {
 				const { metadata } = (await allPostFiles[path]()) as any
 
 				return {
-					...(metadata as {
-						title: string
-						date: Date
-					}),
+					...(metadata as PostMetadata),
 					path: path.match(/(\w+)\.md/)?.[1],
 				}
-			}),
+			})
 		),
 	}
 }

@@ -34,16 +34,28 @@
 			class="txt bg-#1f1c1d @light:bg-white rounded-2 card durition-500
 			@light:text-black box-border flex flex-col p-5 text-white
 			transition hover:shadow-xl">
-			<h2 class="m-0 mb-1">{revival.name}</h2>
-			<div class="flex flex-wrap text-white">
-				{#each revival.clients as year}
-					<span
-						class="{years[year]}
-						my-1 me-2 rounded-full px-2 py-0.5 text-sm">
-						{year}
-					</span>
-				{/each}
+			<div class="flex">
+				<div>
+					<h2 class="m-0 mb-1">{revival.name}</h2>
+					<div class="flex flex-wrap text-white">
+						{#each revival.clients as year}
+							<span
+								class="{years[year]} 
+								my-1 me-2 rounded-full px-2 py-0.5 text-sm">
+								{year}
+							</span>
+						{/each}
+					</div>
+				</div>
+
+				{#if revival.logo}
+					<img
+						src="/logos/{revival.logo}"
+						class="logo my-a ms-a h-14"
+						alt="{revival.name} Logo" />
+				{/if}
 			</div>
+
 			<div class="mb-30">
 				{@html revival.overview}
 			</div>

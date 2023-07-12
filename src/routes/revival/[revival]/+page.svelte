@@ -27,6 +27,12 @@
 					<h1 class="text-2rem m-0">{data.name}</h1>
 					<span class="mt-a ms-a mb-0.5">
 						{when(data.date)}
+						{#if data.updated}
+							<br />
+							<em>
+								{when(data.updated, true)}
+							</em>
+						{/if}
 					</span>
 				</span>
 
@@ -42,11 +48,16 @@
 					<table>
 						{#each Object.keys(ratingCategories) as category}
 							<tr>
-								<td class="pe-6">
+								<td
+									class:pt-4={category == "overall"}
+									class="pe-6">
 									{category.charAt(0).toUpperCase() +
 										category.slice(1)}
 								</td>
-								<Stars rating={ratingCategories[category]} />
+								<div class:pt-4={category == "overall"}>
+									<Stars
+										rating={ratingCategories[category]} />
+								</div>
 							</tr>
 						{/each}
 					</table>
@@ -54,6 +65,7 @@
 			</div>
 		</div>
 	</article>
+
 	{#if data.revivals.length > 0}
 		<section class="w-120 xl:max-w-100 xl:ms-12 xl:mt-14">
 			<h2>Other revivals</h2>
@@ -63,11 +75,19 @@
 					class="txt bg-a @light:text-dark hover:text-#ccc
 					@light:hover:text-#555 rounded-3 durition-500 box-border
 					block text-white transition hover:shadow-xl">
-					<article class="mb-4 px-6 py-3">
-						<h3 class="my-2">{revival.name}</h3>
-						<small class="pb-5">
-							{when(revival.date)}
-						</small>
+					<article class="mb-4 flex p-3 ps-5">
+						{#if revival.logo}
+							<img
+								src="/logos/{revival.logo}"
+								class="logo my-a me-5 h-14"
+								alt="{revival.name} Logo" />
+						{/if}
+						<div>
+							<h3 class="mb-2 mt-1">{revival.name}</h3>
+							<small>
+								{when(revival.date)}
+							</small>
+						</div>
 					</article>
 				</a>
 			{/each}
@@ -78,9 +98,4 @@
 <style lang="sass">
 	section a:hover
 		transform: translateY(-0.15rem)
-
-	.logo
-		filter: drop-shadow(0 0 5px #fffa) invert(0)
-		@media (prefers-color-scheme: light)
-			filter: drop-shadow(0 0 5px #000a)
 </style>

@@ -1,3 +1,5 @@
+import type { RevivalMetadata } from "$lib/types"
+
 export async function load() {
 	const allPostFiles = import.meta.glob("../../../pages/revivals/*.md")
 
@@ -7,18 +9,7 @@ export async function load() {
 				const { metadata } = (await allPostFiles[path]()) as any
 
 				return {
-					...(metadata as {
-						name: string
-						date: Date
-						clients: number[]
-						rating: {
-							website: number
-							community: number
-							clients: number
-							overall: number
-						}
-						overview: string
-					}),
+					...(metadata as RevivalMetadata),
 					path: path.match(/(\w+)\.md/)?.[1],
 				}
 			})

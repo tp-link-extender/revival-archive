@@ -7,7 +7,7 @@
 # About
 
 <div class="content">
-The Revival Archive is dedicated to keeping track of active/defunct old brickbuilding private servers.
+<ins>The Revival Archive is dedicated to keeping track of active and defunct old brickbuilding private servers.</ins>
 
 We also review revivals on specific features such as:
 

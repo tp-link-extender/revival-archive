@@ -84,13 +84,17 @@ hr
 .bg-bg
 	background: #100f0e
 
-
 .content
 	@apply bg-a p-4 rounded-lg shadow-lg
 
 	background: #1f1c1d
 	@media (prefers-color-scheme: light)
 		background: white
+
+.logo
+	filter: drop-shadow(0 0 5px #fffa) invert(0)
+	@media (prefers-color-scheme: light)
+		filter: drop-shadow(0 0 5px #000a)
 
 li ul
 	list-style-type: circle
