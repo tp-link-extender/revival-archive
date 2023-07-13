@@ -1,6 +1,7 @@
 ---
 name: Meteorite
 date: 2023-07-09 01:58 PM
+defunct: yes
 clients:
     - 2016
     - 2020

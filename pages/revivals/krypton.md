@@ -1,6 +1,7 @@
 ---
 name: Krypton
 date: 2023-07-09 01:58 PM
+defunct: yes
 clients:
     - 2011
 rating:

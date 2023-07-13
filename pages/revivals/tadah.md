@@ -1,6 +1,7 @@
 ---
 name: Tadah
 date: 2023-07-09 01:58 PM
+defunct: yes
 clients:
     - 2010
     - 2012

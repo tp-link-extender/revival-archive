@@ -16,7 +16,7 @@
 		class="txt @light:text-dark hover:text-#ccc
 		@light:hover:text-#555 bg-a rounded-3 durition-500 box-border
 		block text-white transition hover:shadow-xl">
-		<article class="mb-4 flex p-3 ps-5">
+		<article class:opacity-50={review.defunct} class="mb-4 flex p-3 ps-5">
 			{#if review.logo}
 				<img
 					src="/logos/{review.logo}"
@@ -24,7 +24,12 @@
 					alt="{review.name} Logo" />
 			{/if}
 			<div>
-				<h2 class="mb-2 mt-1">{review.name}</h2>
+				<div class="flex flex-wrap">
+					<h2 class="mb-0 me-3 mt-1">{review.name}</h2>
+					{#if review.defunct}
+						<p class="mb-a mt-0 text-sm text-red-500">[defunct]</p>
+					{/if}
+				</div>
 				<p class="my-2">
 					{when(review.date)}
 				</p>

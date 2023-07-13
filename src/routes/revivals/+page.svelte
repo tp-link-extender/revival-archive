@@ -34,9 +34,16 @@
 			class="txt bg-#1f1c1d @light:bg-white rounded-2 card durition-500
 			@light:text-black box-border flex flex-col p-5 text-white
 			transition hover:shadow-xl">
-			<div class="flex">
+			<div class:opacity-50={revival.defunct} class="flex">
 				<div>
-					<h2 class="m-0 mb-1">{revival.name}</h2>
+					<div class="flex flex-wrap">
+						<h2 class="m-0 mb-1 me-3">{revival.name}</h2>
+						{#if revival.defunct}
+							<p class="mb-a mt-0 text-sm text-red-500">
+								[defunct]
+							</p>
+						{/if}
+					</div>
 					<div class="flex flex-wrap text-white">
 						{#each revival.clients as year}
 							<span
@@ -56,11 +63,11 @@
 				{/if}
 			</div>
 
-			<div class="mb-30">
+			<div class:opacity-50={revival.defunct} class="mb-30">
 				{@html revival.overview}
 			</div>
 
-			<div class="mt-a ms-a flex">
+			<div class:opacity-50={revival.defunct} class="mt-a ms-a flex">
 				<span class="me-2">Rating:</span>
 				<Stars rating={revival.rating.overall} />
 			</div>

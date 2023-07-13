@@ -24,7 +24,14 @@
 			<a href="/revivals" class="hover:text-#888 mt-a">← Back to Index</a>
 			<div class="ms-4 mt-4">
 				<span class="flex">
-					<h1 class="text-2rem m-0">{data.name}</h1>
+					<div class="flex flex-wrap">
+						<h1 class="text-2rem m-0 me-3">{data.name}</h1>
+						{#if data.defunct}
+							<p class="mb-a mt-0 text-red-500">
+								[defunct]
+							</p>
+						{/if}
+					</div>
 					<span class="mt-a ms-a mb-0.5">
 						{when(data.date)}
 						{#if data.updated}
@@ -75,7 +82,9 @@
 					class="txt bg-a @light:text-dark hover:text-#ccc
 					@light:hover:text-#555 rounded-3 durition-500 box-border
 					block text-white transition hover:shadow-xl">
-					<article class="mb-4 flex p-3 ps-5">
+					<article
+						class:opacity-50={revival.defunct}
+						class="mb-4 flex p-3 ps-5">
 						{#if revival.logo}
 							<img
 								src="/logos/{revival.logo}"
@@ -83,7 +92,14 @@
 								alt="{revival.name} Logo" />
 						{/if}
 						<div>
-							<h3 class="mb-2 mt-1">{revival.name}</h3>
+							<div class="flex flex-wrap">
+								<h3 class="mb-2 me-3 mt-1">{revival.name}</h3>
+								{#if revival.defunct}
+									<p class="mb-a mt-0 text-sm text-red-500">
+										[defunct]
+									</p>
+								{/if}
+							</div>
 							<small>
 								{when(revival.date)}
 							</small>

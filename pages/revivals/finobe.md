@@ -3,6 +3,7 @@ name: Finobe
 date: 2023-07-09 01:58 PM
 updated: 2023-07-12 05:36 AM
 logo: finobe.png
+defunct: yes
 clients:
     - 2012
     - 2016
