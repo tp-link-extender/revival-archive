@@ -24,7 +24,7 @@
 <div class="flex flex-col lg:flex-row">
 	<Navbar />
 
-	<div class="oveflow-scroll flex h-screen w-full flex-col">
+	<div class="flex h-screen w-full flex-col">
 		<main
 			class="pt-18 sm:mx-a sm:w-155 md:w-190 lg:w-170 xl:w-230 2xl:w-280
 			box-border pe-2.5 ps-5 sm:pt-24 lg:pt-12">

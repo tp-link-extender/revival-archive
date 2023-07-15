@@ -31,7 +31,7 @@
 	{#each data.revivals.sort((a, b) => b.rating.overall - a.rating.overall) as revival}
 		<a
 			href="/revival/{revival.path}"
-			class="txt bg-#1f1c1d @light:bg-white rounded-2 card durition-500
+			class="txt card bg-#1f1c1d @light:bg-white rounded-2
 			@light:text-black box-border flex flex-col p-5 text-white
 			transition hover:shadow-xl">
 			<div class:opacity-50={revival.defunct} class="flex">

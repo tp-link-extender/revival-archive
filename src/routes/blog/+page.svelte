@@ -14,7 +14,7 @@
 	<a
 		href="/post/{post.path}"
 		class="txt @light:text-dark hover:text-#ccc
-		@light:hover:text-#555 bg-a rounded-3 durition-500 box-border
+		@light:hover:text-#555 bg-a rounded-3 box-border
 		block text-white transition hover:shadow-xl">
 		<article class="mb-4 px-6 py-3">
 			<h2 class="mb-2 mt-1">{post.title}</h2>

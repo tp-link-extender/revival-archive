@@ -14,7 +14,7 @@
 	<a
 		href="/revival/{review.path}"
 		class="txt @light:text-dark hover:text-#ccc
-		@light:hover:text-#555 bg-a rounded-3 durition-500 box-border
+		@light:hover:text-#555 bg-a rounded-3 box-border
 		block text-white transition hover:shadow-xl">
 		<article class:opacity-50={review.defunct} class="mb-4 flex p-3 ps-5">
 			{#if review.logo}

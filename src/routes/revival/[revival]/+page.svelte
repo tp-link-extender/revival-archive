@@ -27,9 +27,7 @@
 					<div class="flex flex-wrap">
 						<h1 class="text-2rem m-0 me-3">{data.name}</h1>
 						{#if data.defunct}
-							<p class="mb-a mt-0 text-red-500">
-								[defunct]
-							</p>
+							<p class="mb-a mt-0 text-red-500">[defunct]</p>
 						{/if}
 					</div>
 					<span class="mt-a ms-a mb-0.5">
@@ -80,7 +78,7 @@
 				<a
 					href="/revival/{revival.path}"
 					class="txt bg-a @light:text-dark hover:text-#ccc
-					@light:hover:text-#555 rounded-3 durition-500 box-border
+					@light:hover:text-#555 rounded-3 box-border
 					block text-white transition hover:shadow-xl">
 					<article
 						class:opacity-50={revival.defunct}
