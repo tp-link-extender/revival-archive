@@ -1,7 +1,8 @@
 ---
 # Save as /pages/blog/{whatever}.md
+# Try not to have spaces in the filename
 
-title: Second blog post
+title: Second blog post # Two posts shouldn't have the same title
 # Date will show as "Not yet published" if omitted
 date: 2023-07-09 11:40 AM # Must be in any valid JS date format
 # updated: 2023-07-12 05:52 AM

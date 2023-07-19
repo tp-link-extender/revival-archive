@@ -10,7 +10,7 @@
 </svelte:head>
 
 <div class="xl:max-w-300 flex flex-col xl:flex-row">
-	<article class="max-w-180 pt-8">
+	<article class="xl:w-180 pt-8">
 		<div class="-ms-4">
 			<a href="/blog" class="hover:text-#888">← Back to blog</a>
 			<div class="ms-4">

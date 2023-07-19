@@ -4,7 +4,10 @@
 	export let data
 
 	const reviews = data.reviews
+		// Filter only revivals with reviews and ratings
 		.filter(revival => revival.rating)
+		// Sort by non-defunct revivals first, then by rating
+		.sort((a, b) => (a.defunct ? 1 : 0) - (b.defunct ? 1 : 0))
 		.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 </script>
 

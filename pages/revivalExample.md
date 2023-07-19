@@ -1,7 +1,8 @@
 ---
 # Save as /pages/revivals/{whatever}.md
+# Try not to have spaces in the filename
 
-name: Mercury
+name: Mercury # Two revivals shouldn't have the same name
 date: 2023-07-09 01:58 PM # Must be in any valid JS date format
 logo: mercury.svg # Optional, stored in /static/logos/{whatever}
 clients: # Optional, list of client years available

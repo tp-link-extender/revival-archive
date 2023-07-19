@@ -17,9 +17,10 @@
 
 	export let data
 
-	const revivals = data.revivals.sort(
-		(a, b) => (b?.rating?.overall || 0) - (a?.rating?.overall || 0)
-	)
+	const revivals = data.revivals
+		// Sort by non-defunct revivals first, then by rating
+		.sort((a, b) => (a.defunct ? 1 : 0) - (b.defunct ? 1 : 0))
+		.sort((a, b) => (b?.rating?.overall || 0) - (a?.rating?.overall || 0))
 </script>
 
 <svelte:head>
