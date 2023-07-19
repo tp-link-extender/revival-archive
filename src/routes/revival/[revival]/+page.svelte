@@ -43,30 +43,38 @@
 
 				<hr class="mb-4 mt-3" />
 
-				<div class="content pt-0.01 text-justify">
-					<div class="post mb-10">
-						<svelte:component this={data.content} />
+				{#if data.rating}
+					<div class="content pt-0.01 text-justify">
+						<div class="post mb-10">
+							<svelte:component this={data.content} />
+						</div>
+
+						<h1>Rating</h1>
+
+						<table>
+							{#each Object.keys(ratingCategories) as category}
+								<tr>
+									<td
+										class:pt-4={category == "overall"}
+										class="pe-6">
+										{category.charAt(0).toUpperCase() +
+											category.slice(1)}
+									</td>
+									<td class:pt-4={category == "overall"}>
+										<Stars
+											rating={ratingCategories[
+												category
+											]} />
+									</td>
+								</tr>
+							{/each}
+						</table>
 					</div>
-
-					<h1>Rating</h1>
-
-					<table>
-						{#each Object.keys(ratingCategories) as category}
-							<tr>
-								<td
-									class:pt-4={category == "overall"}
-									class="pe-6">
-									{category.charAt(0).toUpperCase() +
-										category.slice(1)}
-								</td>
-								<td class:pt-4={category == "overall"}>
-									<Stars
-										rating={ratingCategories[category]} />
-								</td>
-							</tr>
-						{/each}
-					</table>
-				</div>
+				{:else}
+					<h2 class="font-300 text-center tracking-wide">
+						This revival has not yet been reviewed. Watch this space!
+					</h2>
+				{/if}
 			</div>
 		</div>
 	</article>

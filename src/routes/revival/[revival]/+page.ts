@@ -10,8 +10,6 @@ export async function load({ params }) {
 		throw error(404, "Revival not found")
 	}
 
-	if (!data.metadata.rating) throw error(404, "Revival not found")
-
 	let revivals = await (await loadParent()).revivals
 
 	// remove the current revival from the list
