@@ -1,6 +1,3 @@
-<script lang="ts">
-</script>
-
 <svelte:head>
 	<meta name="description" content="Page not found" />
 	<title>Not found • Revival Archive</title>

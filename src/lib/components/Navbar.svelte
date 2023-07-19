@@ -2,10 +2,7 @@
 	class="bg-#1f1d1c @light:bg-white lg:w-90 lg:h-a lg:pt-42
 	z-1 fixed flex w-full flex-wrap pb-3 ps-6 lg:static lg:flex-col">
 	<span class="me-12 mt-3 hidden sm:inline-block lg:me-0">
-		<a
-			href="/"
-			class="txt @light:text-black lg:text-2.2rem
-			font-600 text-2xl text-white">
+		<a href="/" class="txt lg:text-2.2rem font-600 text-2xl">
 			Revival Archive
 		</a>
 	</span>

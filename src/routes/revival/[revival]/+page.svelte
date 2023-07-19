@@ -72,7 +72,8 @@
 					</div>
 				{:else}
 					<h2 class="font-300 text-center tracking-wide">
-						This revival has not yet been reviewed. Watch this space!
+						This revival has not yet been reviewed. Watch this
+						space!
 					</h2>
 				{/if}
 			</div>

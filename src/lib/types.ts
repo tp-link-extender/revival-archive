@@ -3,6 +3,7 @@ export type RevivalMetadata = {
 	date: Date
 	updated?: Date
 	logo?: string
+	website?: string
 	defunct?: boolean
 	clients: number[]
 	rating?: {

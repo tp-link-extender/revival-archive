@@ -37,8 +37,10 @@ a
 			@apply text-orange-600
 			+lightTheme()
 				@apply text-orange-400
-	.txt
+	&.txt
 		color white
+		+lightTheme()
+			color black
 		&:hover
 			color #aaa
 		&:active

@@ -35,14 +35,28 @@
 {#if revivals.length > 0}
 	<div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
 		{#each revivals as revival}
-			<a
-				href="/revival/{revival.path}"
+			<div
 				class="txt bg-#1f1c1d @light:bg-white rounded-2
 			@light:text-black card box-border flex flex-col p-5 text-white transition hover:shadow-xl">
 				<div class:opacity-50={revival.defunct} class="flex">
 					<div>
 						<div class="flex flex-wrap">
-							<h2 class="m-0 mb-1 me-3">{revival.name}</h2>
+							{#if revival.website}
+								<h2 class="m-0 mb-1 me-3 flex">
+									<a
+										href={revival.website}
+										target="_blank"
+										class="txt">
+										{revival.name}
+									</a>
+									<img
+										src="/outlink.svg"
+										alt="Links to an external site"
+										class="@light:invert ms-1.5 h-3" />
+								</h2>
+							{:else}
+								<h2 class="m-0 mb-1 me-3">{revival.name}</h2>
+							{/if}
 							{#if revival.defunct}
 								<p class="mb-a mt-0 text-sm text-red-500">
 									[defunct]
@@ -68,19 +82,21 @@
 					{/if}
 				</div>
 
-				<div class:opacity-50={revival.defunct} class="mb-30">
-					{@html revival.overview || ""}
-				</div>
-
-				{#if revival.rating}
-					<div
-						class:opacity-50={revival.defunct}
-						class="mt-a ms-a flex">
-						<span class="me-2">Rating:</span>
-						<Stars rating={revival.rating.overall} />
+				<a href="/revival/{revival.path}" class="txt">
+					<div class:opacity-50={revival.defunct} class="mb-30">
+						{@html revival.overview || ""}
 					</div>
-				{/if}
-			</a>
+
+					{#if revival.rating}
+						<div
+							class:opacity-50={revival.defunct}
+							class="mt-a ms-a flex">
+							<span class="me-2">Rating:</span>
+							<Stars rating={revival.rating.overall} />
+						</div>
+					{/if}
+				</a>
+			</div>
 		{/each}
 	</div>
 {:else}
