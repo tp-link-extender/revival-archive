@@ -122,8 +122,22 @@
 	section a:hover
 		transform translateY(-0.15rem)
 
-	.post :global(h2)
-		// make h1 and h2 different sizes,
-		// as they are capped by <article>
-		font-size 1.35rem
+	.post
+		:global(h2)
+			// make h1 and h2 different sizes,
+			// as they are capped by <article>
+			font-size 1.35rem
+
+		:global(blockquote)
+			margin-left 0.5rem
+			padding 0.5rem 0 0.5rem 1rem
+			border-left 0.2rem solid #888a
+			font-style italic
+
+			:global(blockquote)
+				margin-left 0rem
+
+			:global(p)
+				margin 0
+				opacity 0.8
 </style>
