@@ -17,7 +17,7 @@
 				<span class="mt-2 flex">
 					<h1 class="text-2rem m-0">{data.title}</h1>
 					<span class="mt-a ms-a mb-0.5">
-						{when(data.date)}
+						{when(data.date)} by {data.author}
 						{#if data.updated}
 							<br />
 							<em>

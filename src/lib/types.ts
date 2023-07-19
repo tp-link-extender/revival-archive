@@ -13,10 +13,12 @@ export type RevivalMetadata = {
 		overall: number
 	}
 	overview: string
+	author: string
 }
 
 export type PostMetadata = {
 	title: string
 	date: Date
+	author: string
 	updated?: Date
 }

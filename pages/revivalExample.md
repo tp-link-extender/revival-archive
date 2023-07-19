@@ -3,6 +3,7 @@
 # Try not to have spaces in the filename
 
 name: Mercury # Two revivals shouldn't have the same name
+# Date will show as "Not yet published" if omitted
 date: 2023-07-09 01:58 PM # Must be in any valid JS date format
 logo: mercury.svg # Optional, stored in /static/logos/{whatever}
 clients: # Optional, list of client years available
@@ -17,6 +18,7 @@ rating: # Optional, rating is out of 5
 # Overview is in plain text, shows on the revival index page
 overview: | # Optional, MUST be indented with spaces because yaml.
     Mercury is a revival
+author: you # Your username.
 ---
 
 # The full revival review will go here.

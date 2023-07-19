@@ -31,7 +31,7 @@
 						{/if}
 					</div>
 					<span class="mt-a ms-a mb-0.5">
-						{when(data.date)}
+						{when(data.date)} by {data.author}
 						{#if data.updated}
 							<br />
 							<em>
