@@ -5,7 +5,7 @@ export type RevivalMetadata = {
 	logo?: string
 	defunct?: boolean
 	clients: number[]
-	rating: {
+	rating?: {
 		website: number
 		community: number
 		clients: number

@@ -3,13 +3,13 @@
 </script>
 
 {#each { length: 5 } as _, i}
-	<div
+	<span
 		class="me-1.5 inline-block h-5 w-5"
 		style="--rating: {Math.min(1, Math.min(5, rating - i)) * 100}%" />
 {/each}
 
 <style lang="stylus">
-	div
+	span
 		// Fill each star with a gradient based on the rating
 		background linear-gradient(to right,
 			#f1c40f var(--rating), #4f4d4c var(--rating))

@@ -2,6 +2,10 @@
 	import when from "$lib/when"
 
 	export let data
+
+	const posts = data.posts.sort(
+		(a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+	)
 </script>
 
 <svelte:head>
@@ -10,7 +14,7 @@
 
 <h1>Blog Posts</h1>
 
-{#each data.posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()) as post}
+{#each posts as post}
 	<a
 		href="/post/{post.path}"
 		class="txt @light:text-dark hover:text-#ccc
@@ -24,6 +28,12 @@
 		</article>
 	</a>
 {/each}
+
+{#if posts.length == 0}
+	<h2 class="font-300 mt-35vh text-center tracking-wide">
+		No blog posts yet. Watch this space!
+	</h2>
+{/if}
 
 <style lang="stylus">
 	a:hover

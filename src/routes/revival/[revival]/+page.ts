@@ -10,13 +10,18 @@ export async function load({ params }) {
 		throw error(404, "Revival not found")
 	}
 
-	const revivals = await (await loadParent()).revivals
+	if (!data.metadata.rating) throw error(404, "Revival not found")
 
-	// remove the current post from the list
+	let revivals = await (await loadParent()).revivals
+
+	// remove the current revival from the list
 	revivals.splice(
 		revivals.findIndex(revival => revival.name == data.metadata.name),
 		1
 	)
+
+	// remove revivals that don't have a rating
+	revivals = revivals.filter(revival => revival.rating)
 
 	return {
 		...(data.metadata as RevivalMetadata),

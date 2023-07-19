@@ -1,17 +1,24 @@
 ---
+# Save as /pages/revivals/{whatever}.md
+
 name: Mercury
-date: 2023-07-09 01:58 PM
-logo: mercury.svg
-clients:
+date: 2023-07-09 01:58 PM # Must be in any valid JS date format
+logo: mercury.svg # Optional, stored in /static/logos/{whatever}
+clients: # Optional, list of client years available
     - 2013
-rating:
+# defunct: true
+# Remove rating to hide the full review from the site
+rating: # Optional, rating is out of 5
     website: 5
     community: 5
     clients: 5
     overall: 5
-overview: |
+# Overview is in plain text, shows on the revival index page
+overview: | # Optional, MUST be indented with spaces because yaml.
     Mercury is a revival
 ---
+
+# The full revival review will go here.
 
 Tilde lorem tbh, cliche eu forage laborum franzen vice. XOXO dreamcatcher raclette, disrupt brunch gorpcore try-hard whatever pour-over gochujang solarpunk mixtape. Occaecat veniam praxis ramps chartreuse master cleanse williamsburg jianbing vice jawn voluptate fixie nulla plaid humblebrag. Farm-to-table tofu 90's gochujang deep v affogato. Hella yes plz ipsum actually truffaut narwhal viral ut. Fam fixie mustache bushwick.
 

@@ -60,4 +60,9 @@
 <style lang="stylus">
 	section a:hover
 		transform translateY(-0.15rem)
+
+	.content :global(h2)
+		// make h1 and h2 different sizes,
+		// as they are capped by <article>
+		font-size 1.35rem
 </style>

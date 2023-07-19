@@ -2,6 +2,10 @@
 	import when from "$lib/when"
 
 	export let data
+
+	const reviews = data.reviews
+		.filter(revival => revival.rating)
+		.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 </script>
 
 <svelte:head>
@@ -10,7 +14,7 @@
 
 <h1>Reviews</h1>
 
-{#each data.reviews.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()) as review}
+{#each reviews as review}
 	<a
 		href="/revival/{review.path}"
 		class="txt @light:text-dark hover:text-#ccc
@@ -34,13 +38,21 @@
 					{when(review.date)}
 				</p>
 			</div>
-			<div class="mt-a ms-a flex">
-				<span class="me-2">Rating:</span>
-				<Stars rating={review.rating.overall} />
-			</div>
+			{#if review.rating}
+				<div class="mt-a ms-a flex">
+					<span class="me-2">Rating:</span>
+					<Stars rating={review.rating.overall} />
+				</div>
+			{/if}
 		</article>
 	</a>
 {/each}
+
+{#if reviews.length == 0}
+	<h2 class="font-300 mt-35vh text-center tracking-wide">
+		No reviews yet. Watch this space!
+	</h2>
+{/if}
 
 <style lang="stylus">
 	a:hover

@@ -16,6 +16,10 @@
 	}
 
 	export let data
+
+	const revivals = data.revivals.sort(
+		(a, b) => (b?.rating?.overall || 0) - (a?.rating?.overall || 0)
+	)
 </script>
 
 <svelte:head>
@@ -27,53 +31,63 @@
 
 <h1>Revival Index</h1>
 
-<div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-	{#each data.revivals.sort((a, b) => b.rating.overall - a.rating.overall) as revival}
-		<a
-			href="/revival/{revival.path}"
-			class="txt card bg-#1f1c1d @light:bg-white rounded-2
+{#if revivals.length > 0}
+	<div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+		{#each revivals as revival}
+			<a
+				href="/revival/{revival.path}"
+				class="txt bg-#1f1c1d @light:bg-white rounded-2
 			@light:text-black box-border flex flex-col p-5 text-white
-			transition hover:shadow-xl">
-			<div class:opacity-50={revival.defunct} class="flex">
-				<div>
-					<div class="flex flex-wrap">
-						<h2 class="m-0 mb-1 me-3">{revival.name}</h2>
-						{#if revival.defunct}
-							<p class="mb-a mt-0 text-sm text-red-500">
-								[defunct]
-							</p>
-						{/if}
-					</div>
-					<div class="flex flex-wrap text-white">
-						{#each revival.clients as year}
-							<span
-								class="{years[year]} 
+			 {revival?.rating ? 'card transition hover:shadow-xl' : 'pointer-events-none'}">
+				<div class:opacity-50={revival.defunct} class="flex">
+					<div>
+						<div class="flex flex-wrap">
+							<h2 class="m-0 mb-1 me-3">{revival.name}</h2>
+							{#if revival.defunct}
+								<p class="mb-a mt-0 text-sm text-red-500">
+									[defunct]
+								</p>
+							{/if}
+						</div>
+						<div class="flex flex-wrap text-white">
+							{#each revival.clients || [] as year}
+								<span
+									class="{years[year]} 
 								my-1 me-2 rounded-full px-2 py-0.5 text-sm">
-								{year}
-							</span>
-						{/each}
+									{year}
+								</span>
+							{/each}
+						</div>
 					</div>
+
+					{#if revival.logo}
+						<img
+							src="/logos/{revival.logo}"
+							class="logo my-a ms-a h-14"
+							alt="{revival.name} Logo" />
+					{/if}
 				</div>
 
-				{#if revival.logo}
-					<img
-						src="/logos/{revival.logo}"
-						class="logo my-a ms-a h-14"
-						alt="{revival.name} Logo" />
+				<div class:opacity-50={revival.defunct} class="mb-30">
+					{@html revival.overview || ""}
+				</div>
+
+				{#if revival.rating}
+					<div
+						class:opacity-50={revival.defunct}
+						class="mt-a ms-a flex">
+						<span class="me-2">Rating:</span>
+						<Stars rating={revival.rating.overall} />
+					</div>
 				{/if}
-			</div>
-
-			<div class:opacity-50={revival.defunct} class="mb-30">
-				{@html revival.overview}
-			</div>
-
-			<div class:opacity-50={revival.defunct} class="mt-a ms-a flex">
-				<span class="me-2">Rating:</span>
-				<Stars rating={revival.rating.overall} />
-			</div>
-		</a>
-	{/each}
-</div>
+			</a>
+		{/each}
+	</div>
+{:else}
+	<h2 class="font-300 mt-35vh text-center tracking-wide">
+		No revivals yet. Watch this space!
+	</h2>
+{/if}
 
 <style lang="stylus">
 	.card:hover

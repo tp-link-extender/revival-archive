@@ -4,7 +4,7 @@
 
 	export let data
 
-	const ratingCategories: { [k: string]: number } = data.rating
+	const ratingCategories: { [k: string]: number } = data.rating || {}
 </script>
 
 <svelte:head>
@@ -44,7 +44,7 @@
 				<hr class="mb-4 mt-3" />
 
 				<div class="content pt-0.01 text-justify">
-					<div class="mb-10">
+					<div class="post mb-10">
 						<svelte:component this={data.content} />
 					</div>
 
@@ -59,10 +59,10 @@
 									{category.charAt(0).toUpperCase() +
 										category.slice(1)}
 								</td>
-								<div class:pt-4={category == "overall"}>
+								<td class:pt-4={category == "overall"}>
 									<Stars
 										rating={ratingCategories[category]} />
-								</div>
+								</td>
 							</tr>
 						{/each}
 					</table>
@@ -112,4 +112,9 @@
 <style lang="stylus">
 	section a:hover
 		transform translateY(-0.15rem)
+
+	.post :global(h2)
+		// make h1 and h2 different sizes,
+		// as they are capped by <article>
+		font-size 1.35rem
 </style>
