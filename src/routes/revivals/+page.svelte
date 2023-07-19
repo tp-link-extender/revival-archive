@@ -36,7 +36,7 @@
 	<div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
 		{#each revivals as revival}
 			<a
-				href="/revival/{revival.path}"
+				href={revival.rating ? `/revival/${revival.path}` : "/"}
 				class="txt bg-#1f1c1d @light:bg-white rounded-2
 			@light:text-black box-border flex flex-col p-5 text-white
 			 {revival?.rating ? 'card transition hover:shadow-xl' : 'pointer-events-none'}">
