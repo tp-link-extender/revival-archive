@@ -2,10 +2,13 @@
 	import when from "$lib/when"
 
 	export let data
+
+	let date = when(data.date)
+	date = date == "Not yet published" ? date : `${date} by ${data.author}`
 </script>
 
 <svelte:head>
-	<meta name="description" content="{data.title}: {when(data.date)}" />
+	<meta name="description" content="{data.title}: {date}" />
 	<title>{data.title} • Revival Archive</title>
 </svelte:head>
 
@@ -17,7 +20,7 @@
 				<span class="mt-2 flex">
 					<h1 class="text-2rem m-0">{data.title}</h1>
 					<span class="mt-a ms-a mb-0.5">
-						{when(data.date)} by {data.author}
+						{date}
 						{#if data.updated}
 							<br />
 							<em>

@@ -4,11 +4,13 @@
 
 	export let data
 
+	let date = when(data.date)
+	date = date == "Not yet published" ? date : `${date} by ${data.author}`
 	const ratingCategories: { [k: string]: number } = data.rating || {}
 </script>
 
 <svelte:head>
-	<meta name="description" content="{data.name}: {when(data.date)}" />
+	<meta name="description" content="{data.name}: {date}" />
 	<title>{data.name} • Revival Archive</title>
 </svelte:head>
 
@@ -31,7 +33,7 @@
 						{/if}
 					</div>
 					<span class="mt-a ms-a mb-0.5">
-						{when(data.date)} by {data.author}
+						{date}
 						{#if data.updated}
 							<br />
 							<em>
