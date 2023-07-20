@@ -1,5 +1,6 @@
 <script lang="ts">
 	const years: { [k: number]: string } = {
+		2007: "bg-amber-300 text-black",
 		2008: "bg-fuchsia-500 text-black",
 		2009: "bg-rose-400 text-black",
 		2010: "bg-red-600",
