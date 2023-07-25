@@ -15,7 +15,7 @@
 </svelte:head>
 
 <div class="xl:max-w-300 flex flex-col xl:flex-row">
-	<article class="w-180 pt-8">
+	<article class="xl:w-180 pt-8">
 		<div class="-ms-4 flex flex-col">
 			{#if data.logo}
 				<img
@@ -50,27 +50,28 @@
 						<div class="post mb-10">
 							<svelte:component this={data.content} />
 						</div>
+						<div class="mt-5">
+							<h1>Rating</h1>
 
-						<h1>Rating</h1>
-
-						<table>
-							{#each Object.keys(ratingCategories) as category}
-								<tr>
-									<td
-										class:pt-4={category == "overall"}
-										class="pe-6">
-										{category.charAt(0).toUpperCase() +
-											category.slice(1)}
-									</td>
-									<td class:pt-4={category == "overall"}>
-										<Stars
-											rating={ratingCategories[
-												category
-											]} />
-									</td>
-								</tr>
-							{/each}
-						</table>
+							<table>
+								{#each Object.keys(ratingCategories) as category}
+									<tr>
+										<td
+											class:pt-4={category == "overall"}
+											class="pe-6">
+											{category.charAt(0).toUpperCase() +
+												category.slice(1)}
+										</td>
+										<td class:pt-4={category == "overall"}>
+											<Stars
+												rating={ratingCategories[
+													category
+												]} />
+										</td>
+									</tr>
+								{/each}
+							</table>
+						</div>
 					</div>
 				{:else}
 					<h2 class="font-300 text-center tracking-wide">
@@ -142,4 +143,8 @@
 			:global(p)
 				margin 0
 				opacity 0.8
+		
+		:global(p)
+			word-wrap: break-word
+			float: right
 </style>
