@@ -13,9 +13,6 @@ clients:
 overview: |
     Novetus is a long-standing part of the revival community and has been there for quite a while - over time it has been updated with new features that solidify its place in this community. 
 author: task
-rating: # Optional, rating is out of 5
-    clients: 5
-    overall: 5
 ---
 Novetus is a multi-client launcher created by Bitl back in late 2018 as a successor to his previous project RBXLegacy. In addition to being built on the same codebase, Novetus brings a heap of new features that elevates it above its predecessor and improves on user experience.
 
