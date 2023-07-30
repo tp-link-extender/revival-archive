@@ -46,7 +46,7 @@
 				<hr class="mb-4 mt-3" />
 
 				{#if data.rating}
-					<div class="content pt-0.01 text-justify">
+					<div in:fade|global class="content pt-0.01 text-justify">
 						<div class="post mb-10">
 							<svelte:component this={data.content} />
 						</div>

@@ -35,10 +35,12 @@
 
 {#if revivals.length > 0}
 	<div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-		{#each revivals as revival}
+		{#each revivals as revival, num}
 			<div
+				in:fade|global={{ num, total: revivals.length }}
 				class="txt bg-#1f1c1d @light:bg-white rounded-2
-			@light:text-black card box-border flex flex-col p-5 text-white transition hover:shadow-xl">
+			@light:text-black card box-border flex flex-col p-5 text-white
+				transition hover:shadow-xl">
 				<div class:opacity-50={revival.defunct} class="flex">
 					<div>
 						<div class="flex flex-wrap">

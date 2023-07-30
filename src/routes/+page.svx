@@ -7,7 +7,7 @@
 # Revival Archive
 ### a [Mercury](https://banland.xyz) project
 
-<div class="content">
+<div in:fade|global class="content">
 Welcome to the Revival Archive, a website dedicated to keeping track of active/defunct old brickbuilding private servers.
 
 Check out our [blog posts](/blog), [reviews](/reviews) and most importantly, the [revival index](/revivals).

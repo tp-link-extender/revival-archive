@@ -32,7 +32,7 @@
 
 				<hr class="mb-4 mt-3" />
 
-				<div class="content pt-0.01 text-justify">
+				<div in:fade|global class="content pt-0.01 text-justify">
 					<svelte:component this={data.content} />
 				</div>
 			</div>

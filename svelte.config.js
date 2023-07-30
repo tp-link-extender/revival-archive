@@ -16,7 +16,10 @@ export default {
 		}),
 		autoImport({
 			components: ["./src/lib/components"],
-			flat: true,
+			mapping: {
+				fade: 'import fade from "$lib/fade"',
+			},
+      		include: ["**/*.svelte", "**/*.md", "**/*.svx"],
 		}),
 		mdsvex({
 			extensions: [".svelte.md", ".md", ".svx"],

@@ -6,7 +6,7 @@
 
 # About
 
-<div class="content">
+<div in:fade|global class="content">
 <ins>The Revival Archive is dedicated to keeping track of active and defunct old brickbuilding private servers.</ins>
 
 We also review revivals on specific features such as:

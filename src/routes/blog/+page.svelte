@@ -14,8 +14,9 @@
 
 <h1>Blog Posts</h1>
 
-{#each posts as post}
+{#each posts as post, num}
 	<a
+		in:fade|global={{ num, total: posts.length }}
 		href="/post/{post.path}"
 		class="txt @light:text-dark hover:text-#ccc
 		@light:hover:text-#555 bg-a rounded-3 box-border

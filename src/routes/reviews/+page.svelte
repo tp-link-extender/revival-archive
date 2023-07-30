@@ -17,8 +17,9 @@
 
 <h1>Reviews</h1>
 
-{#each reviews as review}
+{#each reviews as review, num}
 	<a
+		in:fade|global={{ num, total: reviews.length }}
 		href="/revival/{review.path}"
 		class="txt @light:text-dark hover:text-#ccc
 		@light:hover:text-#555 bg-a rounded-3 box-border
