@@ -21,7 +21,7 @@ overview: | # Optional, MUST be indented with spaces because yaml.
 author: you # Your username.
 ---
 
-# The full revival review will go here.
+# The full revival review will go here
 
 Tilde lorem tbh, cliche eu forage laborum franzen vice. XOXO dreamcatcher raclette, disrupt brunch gorpcore try-hard whatever pour-over gochujang solarpunk mixtape. Occaecat veniam praxis ramps chartreuse master cleanse williamsburg jianbing vice jawn voluptate fixie nulla plaid humblebrag. Farm-to-table tofu 90's gochujang deep v affogato. Hella yes plz ipsum actually truffaut narwhal viral ut. Fam fixie mustache bushwick.
 

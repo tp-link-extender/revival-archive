@@ -5,6 +5,7 @@
 </svelte:head>
 
 # Revival Archive
+
 ### a [Mercury](https://banland.xyz) project
 
 <div in:fade|global class="content">
