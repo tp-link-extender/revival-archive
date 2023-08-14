@@ -4,6 +4,6 @@ website: https://fluxar.xyz/
 clients:
     - 2017
 overview: |
-    Fluxar is an remake of rawblox, a 2014 to 2017 revival with mobile device support. The website may go down sometimes.
+    Fluxar is an revival that recreates mid 2017 experience with mobile device supported. The website may go down sometimes.
 author: myuser
 ---
