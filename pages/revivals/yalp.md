@@ -1,6 +1,6 @@
 ---
 name: Yalp
-website: https://yalp.rocks/
+website: https://yalp.rocks
 logo: yalp.png
 clients:
     - 2018
