@@ -8,6 +8,7 @@ clients:
     - 2012
     - 2013
     - 2014
+defunct: true
 overview: |
     A multi-client launcher that provides both online and offline play - allowing you to host games privately for you and your friends.  
 author: task
