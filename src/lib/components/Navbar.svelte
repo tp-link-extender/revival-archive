@@ -8,12 +8,21 @@
 	</span>
 	<nav
 		class="mt-3 box-border flex
-	flex-wrap justify-self-center lg:flex-col">
+		flex-wrap justify-self-center lg:flex-col">
 		<a href="/">Home</a>
 		<a href="/about">About</a>
 		<a href="/revivals">Revival Index</a>
 		<a href="/reviews">Reviews</a>
 		<a href="/blog">Blog</a>
+		<span class="flex flex-wrap ">
+			<a href="https://orchives.heliodex.cf/" target="_blank">
+				Document Archive
+				<img
+					src="/outlink.svg"
+					alt="Links to an external site"
+					class="@light:invert h-3 pb-2" />
+			</a>
+		</span>
 	</nav>
 </div>
 
