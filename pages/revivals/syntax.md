@@ -3,6 +3,7 @@ name: Syntax
 website: https://syntax.eco
 logo: syntax.png
 clients:
+    - 2014
     - 2016
     - 2018
     - 2020
