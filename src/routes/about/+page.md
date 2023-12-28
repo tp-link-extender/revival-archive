@@ -7,7 +7,7 @@
 # About
 
 <div in:fade|global class="content">
-<ins>The Revival Archive is dedicated to keeping track of active and defunct old brickbuilding private servers.</ins>
+<ins>The Revival Archive is dedicated to keeping track of active and defunct old Roblox private servers.</ins>
 
 We also review revivals on specific features such as:
 
@@ -26,6 +26,8 @@ Revivals can also be featured in the _Revival Of The Month_, a special place whe
 There can't be more than one _Revival Of The Month_ obviously, so we also have a featured section where we recommend other good revivals. Additionally, if you own a revival, you can request to be on the featured section!
 
 We do not provide any revival clients for security reasons.
+
+We are not affiliated with Roblox Corporation.
 
 ---
 
