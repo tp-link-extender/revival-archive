@@ -1,6 +1,6 @@
 ---
 name: Evenblox
-website: https://evenblox.ct8.pl
+website: https://evnblx.xyz
 logo: evenblox.png
 clients:
     - 2013
