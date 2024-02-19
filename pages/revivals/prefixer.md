@@ -1,6 +1,7 @@
 ---
 name: "Prefixer"
 website: https://prefixr.me/
+logo: prefixer.png
 clients:
     - 2016
 overview: |
