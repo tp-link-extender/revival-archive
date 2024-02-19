@@ -1,6 +1,7 @@
 ---
 name: Placeholder
 website: https://alonso.pictures
+defunct: true
 logo: placeholder.png
 clients:
     - 2016
