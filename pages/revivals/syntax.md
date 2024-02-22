@@ -1,6 +1,7 @@
 ---
 name: Syntax
 website: https://syntax.eco
+defunct: true
 logo: syntax.png
 clients:
     - 2014
