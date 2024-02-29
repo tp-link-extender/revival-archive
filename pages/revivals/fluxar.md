@@ -1,5 +1,6 @@
 ---
 name: "Fluxar"
+defunct: true
 website: https://fluxar.xyz/
 clients:
     - 2017
