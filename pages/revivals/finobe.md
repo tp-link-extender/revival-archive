@@ -1,7 +1,7 @@
 ---
 name: Finobe
 website: https://finobe.net/
-logo: finobe.png
+logo: finobe2.png
 clients:
     - 2012
     - 2016
