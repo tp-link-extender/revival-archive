@@ -1,7 +1,6 @@
 ---
 name: RBLX15
 website: https://www.rb15.us.to/
-defunct: true
 logo: rblx15.png
 clients:
     - 2015
