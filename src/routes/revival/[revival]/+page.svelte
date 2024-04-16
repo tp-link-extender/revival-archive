@@ -54,22 +54,29 @@
 							<h1>Rating</h1>
 
 							<table>
-								{#each Object.keys(ratingCategories) as category}
-									<tr>
-										<td
-											class:pt-4={category == "overall"}
-											class="pe-6">
-											{category.charAt(0).toUpperCase() +
-												category.slice(1)}
-										</td>
-										<td class:pt-4={category == "overall"}>
-											<Stars
-												rating={ratingCategories[
-													category
-												]} />
-										</td>
-									</tr>
-								{/each}
+								<tbody>
+									{#each Object.keys(ratingCategories) as category}
+										<tr>
+											<td
+												class:pt-4={category ==
+													"overall"}
+												class="pe-6">
+												{category
+													.charAt(0)
+													.toUpperCase() +
+													category.slice(1)}
+											</td>
+											<td
+												class:pt-4={category ==
+													"overall"}>
+												<Stars
+													rating={ratingCategories[
+														category
+													]} />
+											</td>
+										</tr>
+									{/each}
+								</tbody>
 							</table>
 						</div>
 					</div>
@@ -89,9 +96,7 @@
 			{#each data.revivals as revival}
 				<a
 					href="/revival/{revival.path}"
-					class="txt bg-a @light:text-dark hover:text-#ccc
-					@light:hover:text-#555 rounded-3 box-border
-					block text-white transition hover:shadow-xl">
+					class="txt bg-a @light:text-dark hover:text-#ccc @light:hover:text-#555 rounded-3 box-border block text-white transition hover:shadow-xl">
 					<article
 						class:opacity-50={revival.defunct}
 						class="mb-4 flex p-3 ps-5">

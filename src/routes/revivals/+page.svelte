@@ -13,7 +13,7 @@
 		2017: "bg-indigo-600",
 		2018: "bg-violet-400 text-black",
 		2019: "bg-purple-600",
-		2020: "bg-slate-600",
+		2020: "bg-slate-600"
 	}
 
 	export let data
@@ -38,9 +38,7 @@
 		{#each revivals as revival, num}
 			<div
 				in:fade|global={{ num, total: revivals.length }}
-				class="txt bg-#1f1c1d @light:bg-white rounded-2
-			@light:text-black card box-border flex flex-col p-5 text-white
-				transition hover:shadow-xl">
+				class="txt bg-#1f1c1d @light:bg-white rounded-2 @light:text-black card box-border flex flex-col p-5 text-white transition hover:shadow-xl">
 				<div class:opacity-50={revival.defunct} class="flex">
 					<div>
 						<div class="flex flex-wrap">
@@ -69,8 +67,9 @@
 						<div class="flex flex-wrap text-white">
 							{#each revival.clients || [] as year}
 								<span
-									class="{years[year]} 
-								my-1 me-2 rounded-full px-2 py-0.5 text-sm">
+									class="{years[
+										year
+									]} my-1 me-2 rounded-full px-2 py-0.5 text-sm">
 									{year}
 								</span>
 							{/each}

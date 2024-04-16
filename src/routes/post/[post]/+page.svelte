@@ -45,9 +45,7 @@
 			{#each data.posts as post}
 				<a
 					href="/post/{post.path}"
-					class="txt bg-a @light:text-dark hover:text-#ccc
-					@light:hover:text-#555 rounded-3 box-border
-					block text-white transition hover:shadow-xl">
+					class="txt bg-a @light:text-dark hover:text-#ccc @light:hover:text-#555 rounded-3 box-border block text-white transition hover:shadow-xl">
 					<article class="mb-4 px-6 py-3">
 						<h3 class="my-2">{post.title}</h3>
 						<small class="pb-5">
