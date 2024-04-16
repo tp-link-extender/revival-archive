@@ -34,6 +34,5 @@
 	},
 	"dependencies": {
 		"nprogress": "^0.2.0"
-	},
-	"packageManager": "npm@10.5.0"
+	}
 }
