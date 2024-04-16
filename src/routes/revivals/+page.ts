@@ -1,18 +1,18 @@
 import type { RevivalMetadata } from "$lib/types"
 
-export async function load() {
-	const allPostFiles = import.meta.glob("../../../pages/revivals/*.md")
+const allPostFiles = import.meta.glob("../../../pages/revivals/*.md")
 
-	return {
-		revivals: Promise.all(
-			Object.keys(allPostFiles).map(async path => {
-				const { metadata } = (await allPostFiles[path]()) as any
+export const load = async () => ({
+	revivals: await Promise.all(
+		Object.keys(allPostFiles).map(async path => {
+			const { metadata } = (await allPostFiles[path]()) as {
+				metadata: RevivalMetadata
+			}
 
-				return {
-					...(metadata as RevivalMetadata),
-					path: path.match(/(\w+)\.md/)?.[1],
-				}
-			})
-		),
-	}
-}
+			return {
+				...metadata,
+				path: path.match(/(\w+)\.md/)?.[1],
+			}
+		})
+	),
+})

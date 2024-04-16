@@ -1,6 +1,6 @@
 ---
-name: Mercury 2 
-website: https://banland.xyz
+name: Mercury 2
+website: https://mercury2.com
 logo: mercury.svg
 clients:
     - 2013

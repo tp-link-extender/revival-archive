@@ -3,27 +3,32 @@ import { load as loadParent } from "../../revivals/+page"
 import type { RevivalMetadata } from "$lib/types"
 
 export async function load({ params }) {
-	let data: any
+	let data: {
+		metadata: RevivalMetadata
+		default: string
+	}
 	try {
 		data = await import(`../../../../pages/revivals/${params.revival}.md`)
 	} catch (e) {
-		throw error(404, "Revival not found")
+		error(404, "Revival not found")
+		return
 	}
 
-	let revivals = await (await loadParent()).revivals
+	const { revivals } = await loadParent()
 
 	// remove the current revival from the list
-	revivals.splice(
-		revivals.findIndex(revival => revival.name == data.metadata.name),
-		1
-	)
-
-	// remove revivals that don't have a rating
-	revivals = revivals.filter(revival => revival.rating)
 
 	return {
-		...(data.metadata as RevivalMetadata),
+		...data.metadata,
 		content: data.default,
-		revivals,
+		revivals: revivals
+			.toSpliced(
+				revivals.findIndex(
+					revival => revival.name === data.metadata.name
+				),
+				1
+			)
+			// remove revivals that don't have a rating
+			.filter(revival => revival.rating),
 	}
 }

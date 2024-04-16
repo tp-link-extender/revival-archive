@@ -9,5 +9,5 @@ export default (date: Date, updated = false) => {
 		hour: "numeric",
 		minute: "numeric",
 	})
-	return d == "Invalid Date" ? `Not yet ${text}` : `${Text} ${d}`
+	return d === "Invalid Date" ? `Not yet ${text}` : `${Text} ${d}`
 }

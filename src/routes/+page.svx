@@ -6,7 +6,7 @@
 
 # Revival Archive
 
-### a [Mercury](https://banland.xyz) project
+### a [Mercury](https://mercury2.com) project
 
 <div in:fade|global class="content">
 Welcome to the Revival Archive, a website dedicated to keeping track of active/defunct old Roblox private servers.
