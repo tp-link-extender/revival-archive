@@ -2,6 +2,7 @@
 name: "Prefixer"
 website: https://prefixr.me/
 logo: prefixer.png
+defunct: true
 clients:
     - 2016
 overview: |
