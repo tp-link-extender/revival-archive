@@ -2,6 +2,7 @@
 name: Project X
 website: https://www.projex.zip
 logo: projectx.png
+defunct: true
 clients:
     - 2016
     - 2017
