@@ -1,6 +1,7 @@
 ---
 name: Evenblox
 website: https://evnblx.xyz
+defunct: true
 logo: evenblox.png
 clients:
     - 2013
