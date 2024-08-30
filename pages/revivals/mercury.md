@@ -1,6 +1,7 @@
 ---
 name: Mercury 2
 website: https://mercury2.com
+defunct: true
 logo: mercury.svg
 clients:
     - 2013
