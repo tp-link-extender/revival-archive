@@ -6,7 +6,9 @@
 
 # Revival Archive
 
-### a [Mercury 3](https://mercs.dev) project
+<h3 class="mercury-project">
+	a <img src="/logos/mercury.svg" alt="" class="logo" /> <a href="https://mercs.dev">Mercury 3</a> project
+</h3>
 
 <div in:fade|global class="content">
 Welcome to the Revival Archive, a website dedicated to keeping track of active/defunct old Roblox private servers.
@@ -50,4 +52,13 @@ We are not affiliated with Roblox Corporation.
 		margin-bottom 0
 	h3 
 		margin-top 0
+
+	.mercury-project
+		display flex
+		align-items center
+		gap 0.4rem
+
+		.logo
+			width 1.25rem
+			height 1.25rem
 </style>
