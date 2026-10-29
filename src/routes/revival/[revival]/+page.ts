@@ -2,6 +2,14 @@ import { error } from "@sveltejs/kit"
 import { load as loadParent } from "../../revivals/+page"
 import type { RevivalMetadata } from "$lib/types"
 
+const revivalPages = import.meta.glob("../../../../pages/revivals/*.md")
+
+export const entries = () =>
+	Object.keys(revivalPages).flatMap(path => {
+		const match = path.match(/([^/]+)\.md$/)
+		return match ? [{ revival: match[1] }] : []
+	})
+
 export async function load({ params }) {
 	let data: {
 		metadata: RevivalMetadata
