@@ -22,7 +22,7 @@
 		<article class="mb-4 px-6 py-3">
 			<h2 class="mb-2 mt-1">{post.title}</h2>
 			<p class="my-2">
-				{when(post.date)}
+				{when(post.date)} by {post.author}
 			</p>
 		</article>
 	</a>

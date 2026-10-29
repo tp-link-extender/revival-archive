@@ -9,7 +9,9 @@
 <div in:fade|global class="content">
 <ins>The Revival Archive is dedicated to keeping track of active and defunct old Roblox private servers.</ins>
 
-We also review revivals on specific features such as:
+The Revival Archive is also a part of the [Mercury Suite](https://github.com/tp-link-extender), which is a set of curated tools and sub-projects for the main [Mercury Core](https://github.com/tp-link-extender/MercuryCore) / [Mercury 3](https://mercs.dev) project.
+
+We review revivals on specific features such as:
 
 - Website
   - This rating is influenced by how good the revival website is - function, form and features.
@@ -20,7 +22,7 @@ We also review revivals on specific features such as:
 - Overall
   - This rating is a conclusion of all the previous ratings and this rating will be the one shown in the index.
 
-We have a blog post where we go over recent events in the community (such as popular revivals going defunct, upcoming revivals, etc).
+We have a blog where we go over recent events in the community (such as popular revivals going defunct, upcoming revivals, etc).
 
 Revivals can also be featured in the _Revival Of The Month_, a special place where one revival is, in our opinion - the best revival for users to join at the moment.
 There can't be more than one _Revival Of The Month_ obviously, so we also have a featured section where we recommend other good revivals. Additionally, if you own a revival, you can request to be on the featured section!
@@ -36,7 +38,6 @@ We are not affiliated with Roblox Corporation.
 The revival must:
 
 - Have at least 100 members
-  - More than half should be active
 - Have a client
 - Have a website (some revivals are launcher based, if your revival fits into this it will be an exception)
 
@@ -46,14 +47,12 @@ Including minimum requirements, the revival must:
 
 - Be rated above 4 stars conistently
 - Have at least 200 members
-  - More than half should be active
 
 ## Requirements for being Revival Of The Month
 
 Including featured requirements, the revival must:
 
 - Have at least 300 members
-  - Majority should be active
 - Client & community ratings should be high
 
 </div>
