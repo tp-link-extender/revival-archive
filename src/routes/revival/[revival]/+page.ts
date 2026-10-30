@@ -4,6 +4,8 @@ import type { RevivalMetadata } from "$lib/types"
 
 const revivalPages = import.meta.glob("../../../../pages/revivals/*.md")
 
+export const prerender = false
+
 export const entries = () =>
 	Object.keys(revivalPages).flatMap(path => {
 		const match = path.match(/([^/]+)\.md$/)
